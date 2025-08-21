@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Donnan Boss Fight.sln"
+    "dotnet.defaultSolution": "Donnan-Boss-Fight.sln"
 }
