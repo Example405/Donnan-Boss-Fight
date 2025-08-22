@@ -7,6 +7,7 @@ public class UIScript : MonoBehaviour
 {   
 
     public GameObject[] buttons = new GameObject[3];
+    public GameObject deathScreen;
     public GameObject healthBar;
     public Slider healthSlider;
 
@@ -20,10 +21,26 @@ public class UIScript : MonoBehaviour
         buttons[2].SetActive(false);
     }
 
-    public void RevealButtons() {
+    public void ShowButtons() {
         buttons[0].SetActive(true);
         buttons[1].SetActive(true);
         buttons[2].SetActive(true);
+    }
+
+    public void ShowDeathScreen() {
+        deathScreen.SetActive(true);
+    }
+
+    public void HideDeathScreen() {
+        deathScreen.SetActive(false);
+    }
+
+    public void ShowHealthBar() {
+        healthBar.SetActive(true);
+    }
+
+    public void HideHealthBar() {
+        healthBar.SetActive(false);
     }
 
     public IEnumerator ChangeBar(float currentHealth, float damage) {
@@ -36,5 +53,8 @@ public class UIScript : MonoBehaviour
 
     }
 
+    public void ExitGame() {
+        Application.Quit();
+    }
 
 }

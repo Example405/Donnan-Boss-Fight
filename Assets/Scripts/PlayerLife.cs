@@ -52,6 +52,10 @@ public class PlayerLife : MonoBehaviour
 
     private void KillPlayer() {
         //add functionality here
-
+        us.HideButtons();
+        us.HideHealthBar();
+        us.ShowDeathScreen();
+        
+        Destroy(gameObject);
     }
 }
