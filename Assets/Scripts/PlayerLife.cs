@@ -39,7 +39,7 @@ public class PlayerLife : MonoBehaviour
         }
     }
 
-    public void DamagePlayer(float damage) {
+    public bool DamagePlayer(float damage) {
         if (canBeHit) {
             canBeHit = false;
             health -= damage;
@@ -47,7 +47,9 @@ public class PlayerLife : MonoBehaviour
             if (health <= 0) {
                 KillPlayer();
             }
+            return true;
         }
+        return false;
     }
 
     private void KillPlayer() {

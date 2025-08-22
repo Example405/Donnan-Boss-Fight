@@ -27,6 +27,7 @@ public class ProjectileScript : MonoBehaviour
     private bool isHitting = false;
     private float timeSinceHit = 0.0f;
     private PlayerLife pl;
+    private bool successfulHit = false;
 
     public void SetDifficulty(float diff) {
         difficulty = diff;
@@ -34,7 +35,7 @@ public class ProjectileScript : MonoBehaviour
 
     public void Update() {
         if (isHitting) {
-            pl.DamagePlayer(damage * difficulty * multiplier);
+            successfulHit = pl.DamagePlayer(damage * difficulty * multiplier);
             timeSinceHit = 0.0f;
         }
         timeSinceHit += Time.deltaTime;
@@ -42,10 +43,10 @@ public class ProjectileScript : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D coll) {
         if (coll.gameObject.tag == "Player") {
-            coll.gameObject.transform.GetComponent<PlayerLife>().DamagePlayer(damage * difficulty * multiplier);
+            successfulHit = coll.gameObject.transform.GetComponent<PlayerLife>().DamagePlayer(damage * difficulty * multiplier);
         }
 
-        if (destroyOnHit)
+        if (destroyOnHit && successfulHit)
             Destroy(gameObject);
     }
 
@@ -56,7 +57,7 @@ public class ProjectileScript : MonoBehaviour
             isHitting = true;
         }
 
-        if (destroyOnHit)
+        if (destroyOnHit && successfulHit)
             Destroy(gameObject);
     }
 
