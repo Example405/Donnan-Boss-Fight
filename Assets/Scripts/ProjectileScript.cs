@@ -33,7 +33,7 @@ public class ProjectileScript : MonoBehaviour
     }
 
     public void Update() {
-        if (isHitting && timeSinceHit >= 0.25) {
+        if (isHitting) {
             pl.DamagePlayer(damage * difficulty * multiplier);
             timeSinceHit = 0.0f;
         }

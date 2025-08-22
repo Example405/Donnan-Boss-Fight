@@ -47,7 +47,7 @@ public class UIScript : MonoBehaviour
         float time = 0.0f;
         while (time <= 1) {
             healthSlider.value = Mathf.Lerp(currentHealth + damage, currentHealth, time);
-            time += Time.deltaTime * 4.0f;
+            time += Time.deltaTime * 8.0f;
             yield return null;
         }
 

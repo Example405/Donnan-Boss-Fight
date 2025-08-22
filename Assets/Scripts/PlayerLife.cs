@@ -23,9 +23,9 @@ public class PlayerLife : MonoBehaviour
     public float maxHealth = 100.0f;
     public float health = 100.0f;
     public float regeneration = 2.0f;
-    public float damageCooldown = 1.0f;
+    public float damageCooldown = 0.1f;
     public bool canBeHit = true;
-    public float timeSinceHit = 0.0f;
+    private float timeSinceHit = 0.0f;
     public UIScript us;
 
 
