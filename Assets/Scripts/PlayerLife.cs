@@ -58,6 +58,6 @@ public class PlayerLife : MonoBehaviour
         us.HideHealthBar();
         us.ShowDeathScreen();
         
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 }
