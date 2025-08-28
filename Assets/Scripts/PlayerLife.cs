@@ -54,7 +54,7 @@ public class PlayerLife : MonoBehaviour
 
     private void KillPlayer() {
         //add functionality here
-        us.HideButtons();
+        us.HideBattleButtons();
         us.HideHealthBar();
         us.ShowDeathScreen();
         

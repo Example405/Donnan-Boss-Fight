@@ -9,19 +9,16 @@ public class UIScript : MonoBehaviour
     public GameObject[] buttons = new GameObject[3];
     public GameObject deathScreen;
     public GameObject healthBar;
+    public GameObject battleWorld;
     public Slider healthSlider;
 
-    public void Start() {
-        healthSlider = healthBar.GetComponent<Slider>();
-    }
-
-    public void HideButtons() {
+    public void HideBattleButtons() {
         buttons[0].SetActive(false);
         buttons[1].SetActive(false);
         buttons[2].SetActive(false);
     }
 
-    public void ShowButtons() {
+    public void ShowBattleButtons() {
         buttons[0].SetActive(true);
         buttons[1].SetActive(true);
         buttons[2].SetActive(true);
@@ -55,6 +52,18 @@ public class UIScript : MonoBehaviour
 
     public void ExitGame() {
         Application.Quit();
+    }
+
+    public void EnterBattleUI() {
+        ShowHealthBar();
+        ShowBattleButtons();
+        battleWorld.SetActive(true);
+    }
+
+    public void ExitBattleUI() {
+        HideHealthBar();
+        HideBattleButtons();
+        battleWorld.SetActive(false);
     }
 
 }
