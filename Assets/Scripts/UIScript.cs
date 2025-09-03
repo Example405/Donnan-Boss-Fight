@@ -7,9 +7,13 @@ public class UIScript : MonoBehaviour
 {   
 
     public GameObject[] buttons = new GameObject[3];
+    public Sprite[] buttonAssets = new Sprite[6];
+    public Sprite heartSprite;
     public GameObject deathScreen;
     public GameObject healthBar;
     public GameObject battleWorld;
+    public GameObject attackBar;
+    public GameObject heart;
     public Slider healthSlider;
 
     public void HideBattleButtons() {
@@ -22,6 +26,66 @@ public class UIScript : MonoBehaviour
         buttons[0].SetActive(true);
         buttons[1].SetActive(true);
         buttons[2].SetActive(true);
+    }
+
+    public void SelectButton(int newButton, int pastButton) {
+        buttons[pastButton].transform.GetComponent<Image>().sprite = buttonAssets[pastButton];
+        buttons[newButton].transform.GetComponent<Image>().sprite = buttonAssets[newButton + 3];
+    }
+
+    public void ShowAttackBar() {
+        attackBar.SetActive(true);
+    }
+
+    public void HideAttackBar() {
+        attackBar.SetActive(false);
+    }
+
+    public void ShowItemMenu() {
+        //TBD
+    }
+
+    public void HideItemMenu() {
+        //TBD
+    }
+
+    public void ShowSpareMenu() {
+        //TBD
+    }
+
+    public void HideSpareMenu() {
+        //TBD
+    }
+
+    public void LoadButtonMenu(int button) {
+        if (button == 0) {
+            HideBattleButtons();
+            ShowAttackBar();
+        }
+        else if (button == 1) {
+            HideBattleButtons();
+            ShowItemMenu();
+        }
+        else {
+            HideBattleButtons();
+            ShowSpareMenu();
+        }
+
+    }
+
+    public void HideButtonMenu(int button) {
+        if (button == 0) {
+            ShowBattleButtons();
+            //HideAttackBar();
+        }
+        else if (button == 1) {
+            ShowBattleButtons();
+            HideItemMenu();
+        }
+        else {
+            ShowBattleButtons();
+            HideSpareMenu();
+        }
     }
 
     public void ShowDeathScreen() {
@@ -40,6 +104,14 @@ public class UIScript : MonoBehaviour
         healthBar.SetActive(false);
     }
 
+    public void ShowBattleWorld() {
+        battleWorld.SetActive(true);
+    }
+
+    public void HideBattleWorld() {
+        battleWorld.SetActive(false);
+    }
+
     public IEnumerator ChangeBar(float currentHealth, float damage) {
         float time = 0.0f;
         while (time <= 1) {
@@ -55,15 +127,17 @@ public class UIScript : MonoBehaviour
     }
 
     public void EnterBattleUI() {
+        //ShowBattleButtons();
+        HideBattleButtons();
+        ShowBattleWorld();
         ShowHealthBar();
-        ShowBattleButtons();
-        battleWorld.SetActive(true);
     }
 
     public void ExitBattleUI() {
+        //HideBattleButtons();
+        ShowBattleButtons();
+        HideBattleWorld();
         HideHealthBar();
-        HideBattleButtons();
-        battleWorld.SetActive(false);
     }
 
 }
