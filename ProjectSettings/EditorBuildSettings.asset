@@ -8,5 +8,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WorldWorld.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/BattleWorld.unity
+    guid: af27d6159215dfb49899481acbbada8d
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

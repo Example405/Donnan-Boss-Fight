@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WorldMove : MonoBehaviour
 {
@@ -39,6 +40,7 @@ public class WorldMove : MonoBehaviour
                 lookingState = 3;
                 alreadyLooking = true;
             }
+            EnterBattleScene();
         }
         if (Input.GetKey(KeyCode.S)) {
             vertical -= 1.0f * speed;
@@ -63,5 +65,9 @@ public class WorldMove : MonoBehaviour
         vertical = 0.0f;
         alreadyLooking = false;
         anim.SetInteger("WalkingState", lookingState);
+    }
+
+    public void EnterBattleScene() {
+        SceneManager.LoadScene("BattleWorld");
     }
 }

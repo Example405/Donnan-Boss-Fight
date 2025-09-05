@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BattleSystem : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class BattleSystem : MonoBehaviour
     float attackbarStartingPoint = -875.0f;
     float attackbarEndingPoint = 875.0f;
     public GameObject attackBar;
+
+
+    public int testing = 0;
 
     public UIScript us;
 
@@ -67,6 +71,10 @@ public class BattleSystem : MonoBehaviour
                 us.HideAttackBar();
                 timeAdd = 0.0f;
                 turn = 5;
+                testing += 1;
+                if (testing == 2) {
+                    LeaveBattleScene();
+                }
             }
         }
         else if (turn == 3) {
@@ -105,5 +113,7 @@ public class BattleSystem : MonoBehaviour
         }
     }   
 
-    
+    public void LeaveBattleScene () {
+        SceneManager.LoadScene("WorldWorld");
+    }
 }
