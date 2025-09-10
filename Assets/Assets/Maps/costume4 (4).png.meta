@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cfc86fc6c15ab474eae1eadc686f7053
+guid: afb7b032ca6c116439d148391da5b5a4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5346125774891372227
-    second: costume4 (2)_0
+      213: -4107972004266455294
+    second: costume4 (4)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: costume4 (2)_0
+      name: costume4 (4)_0
       rect:
         serializedVersion: 2
         x: 0
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3cec5f83111413a40800000000000000
-      internalID: 5346125774891372227
+      spriteID: 20fc2722a3d8df6c0800000000000000
+      internalID: -4107972004266455294
       vertices: []
       indices: 
       edges: []
@@ -131,7 +131,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      costume4 (2)_0: 5346125774891372227
+      costume4 (4)_0: -4107972004266455294
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

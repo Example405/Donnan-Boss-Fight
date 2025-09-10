@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cfc86fc6c15ab474eae1eadc686f7053
+guid: a6cd408a6f454d74eb19ad46d8db9c54
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5346125774891372227
-    second: costume4 (2)_0
+      213: -6995798599712247271
+    second: bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: costume4 (2)_0
+      name: bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 494
-        height: 422
+        width: 858
+        height: 420
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3cec5f83111413a40800000000000000
-      internalID: 5346125774891372227
+      spriteID: 912f9f72d3ee9ee90800000000000000
+      internalID: -6995798599712247271
       vertices: []
       indices: 
       edges: []
@@ -131,7 +131,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      costume4 (2)_0: 5346125774891372227
+      bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8_0: -6995798599712247271
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

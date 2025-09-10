@@ -10,5 +10,6 @@ public class Item : ScriptableObject
     public float healPercent = 0.0f;
     public float dmgAmt = 0.0f;
     public float dmgPercent = 0.0f;
+    public bool hasItem = false;
 
 }

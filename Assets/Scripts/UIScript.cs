@@ -46,8 +46,12 @@ public class UIScript : MonoBehaviour
     public void ShowItemMenu(Item[] items) {
         iM.gameObject.SetActive(true);
         for (int i = 0; i < 12; i++) {
-            iM.GetChild(i).GetComponent<TextMeshProUGUI>().text = items[i].name;
+            if (items[i].hasItem)
+                iM.GetChild(i).GetComponent<TextMeshProUGUI>().text = items[i].name;
+            else
+                iM.GetChild(i).GetComponent<TextMeshProUGUI>().text = "Not Discovered";
         }
+        SelectItem(0, 0);
     }
 
     public void HideItemMenu() {
@@ -55,7 +59,7 @@ public class UIScript : MonoBehaviour
     }
 
     public void SelectItem(int item, int oldItem) {
-        iM.GetChild(oldItem).GetComponent<TextMeshProUGUI>().color = Color.black;
+        iM.GetChild(oldItem).GetComponent<TextMeshProUGUI>().color = Color.white;
         iM.GetChild(item).GetComponent<TextMeshProUGUI>().color = Color.yellow;
     }
 

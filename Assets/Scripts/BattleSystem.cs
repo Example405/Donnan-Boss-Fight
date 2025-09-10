@@ -88,14 +88,14 @@ public class BattleSystem : MonoBehaviour
                 int tempOn = itemOn;
                 itemOn -= 4;
                 if (itemOn <= 0)
-                    itemOn += 8;
-                us.SelectButton(itemOn - 1, tempOn - 1);
+                    itemOn += 12;
+                us.SelectItem(itemOn - 1, tempOn - 1);
             }
             else if (Input.GetKeyDown(KeyCode.D)) {
                 int tempOn = itemOn;
                 itemOn += 4;
-                if (buttonOn >= 13)
-                    buttonOn -= 8;
+                if (itemOn >= 13)
+                    itemOn -= 12;
                 us.SelectItem(itemOn - 1, tempOn - 1);
             }
             else if (Input.GetKeyDown(KeyCode.W)) {
@@ -103,6 +103,7 @@ public class BattleSystem : MonoBehaviour
                 itemOn -= 1;
                 if (itemOn % 4 == 0)
                     itemOn += 4;
+                us.SelectItem(itemOn - 1, tempOn - 1);
             }
             else if (Input.GetKeyDown(KeyCode.S)) {
                 int tempOn = itemOn;
@@ -110,6 +111,7 @@ public class BattleSystem : MonoBehaviour
                     itemOn -= 3;
                 else
                     itemOn += 1;
+                us.SelectItem(itemOn - 1, tempOn - 1);
             }
 
             if (Input.GetKeyDown(KeyCode.Backspace)) {
