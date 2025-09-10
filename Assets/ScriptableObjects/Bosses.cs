@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Boss", menuName = "ScriptableObjects/Boss", order = 1)]
+[CreateAssetMenu(fileName = "Bosses", menuName = "ScriptableObjects/Boss", order = 1)]
 public class Bosses : ScriptableObject
 {
     //blah blah blah just add

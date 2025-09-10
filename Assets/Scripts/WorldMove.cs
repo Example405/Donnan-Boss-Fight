@@ -40,7 +40,6 @@ public class WorldMove : MonoBehaviour
                 lookingState = 3;
                 alreadyLooking = true;
             }
-            EnterBattleScene();
         }
         if (Input.GetKey(KeyCode.S)) {
             vertical -= 1.0f * speed;
@@ -49,6 +48,8 @@ public class WorldMove : MonoBehaviour
                 alreadyLooking = true;
             }
         }
+        if (Input.GetKey(KeyCode.J))
+            EnterBattleScene();
 
         if (horizontal != 0 || vertical != 0)
             rb.velocity = new Vector2(horizontal, vertical);

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272108fc7b5b68246abad854576af3bc, type: 3}
+  m_Name: PlayerData
+  m_EditorClassIdentifier: 
+  health: 100
+  maxHealth: 100
+  damage: 5
+  items:
+  - {fileID: 11400000, guid: 52b0e166d428d5c438fae155d0833c10, type: 2}
+  - {fileID: 11400000, guid: 779d329a489f06b438858e0f982d9d89, type: 2}
+  - {fileID: 11400000, guid: 1f86923891e1f6049bc04b4c9936afcf, type: 2}
+  - {fileID: 11400000, guid: 051e8fe3cda1882499249c578b1811d5, type: 2}
+  - {fileID: 11400000, guid: ebf1a7ee6ca7a954991311b305fe29da, type: 2}
+  - {fileID: 11400000, guid: 7a55f8367fefd124ca0d4f597bfd2664, type: 2}
+  - {fileID: 11400000, guid: 580b796f8e740bc41bebc074faba87a7, type: 2}
+  - {fileID: 11400000, guid: 2b76a70a6b31a9240a339b3f20603d3b, type: 2}
+  - {fileID: 11400000, guid: e185b05f7f024834090239a6f4ac808a, type: 2}
+  - {fileID: 11400000, guid: 288cd2705db1ded439c4fa4693ef3cb6, type: 2}
+  - {fileID: 11400000, guid: d3427ed04f4b94e4f9f568ce788459c2, type: 2}
+  - {fileID: 11400000, guid: 0c0cccbcade0e5848a607fe2fb59abfc, type: 2}

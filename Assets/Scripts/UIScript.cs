@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class UIScript : MonoBehaviour
 {   
@@ -14,6 +15,7 @@ public class UIScript : MonoBehaviour
     public GameObject battleWorld;
     public GameObject attackBar;
     public GameObject heart;
+    public Transform iM;
     public Slider healthSlider;
 
     public void HideBattleButtons() {
@@ -41,12 +43,20 @@ public class UIScript : MonoBehaviour
         attackBar.SetActive(false);
     }
 
-    public void ShowItemMenu() {
-        //TBD
+    public void ShowItemMenu(Item[] items) {
+        iM.gameObject.SetActive(true);
+        for (int i = 0; i < 12; i++) {
+            iM.GetChild(i).GetComponent<TextMeshProUGUI>().text = items[i].name;
+        }
     }
 
     public void HideItemMenu() {
-        //TBD
+        iM.gameObject.SetActive(false);
+    }
+
+    public void SelectItem(int item, int oldItem) {
+        iM.GetChild(oldItem).GetComponent<TextMeshProUGUI>().color = Color.black;
+        iM.GetChild(item).GetComponent<TextMeshProUGUI>().color = Color.yellow;
     }
 
     public void ShowSpareMenu() {
@@ -64,7 +74,23 @@ public class UIScript : MonoBehaviour
         }
         else if (button == 1) {
             HideBattleButtons();
-            ShowItemMenu();
+            ShowItemMenu(null);
+        }
+        else {
+            HideBattleButtons();
+            ShowSpareMenu();
+        }
+
+    }
+
+    public void LoadButtonMenu(int button, Item[] items) {
+        if (button == 0) {
+            HideBattleButtons();
+            ShowAttackBar();
+        }
+        else if (button == 1) {
+            HideBattleButtons();
+            ShowItemMenu(items);
         }
         else {
             HideBattleButtons();
@@ -139,5 +165,7 @@ public class UIScript : MonoBehaviour
         HideBattleWorld();
         HideHealthBar();
     }
+
+    
 
 }
