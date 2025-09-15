@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Donnan torso (1)_0: -229798831557547100
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
