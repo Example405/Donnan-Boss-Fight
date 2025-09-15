@@ -2495,6 +2495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackBar: {fileID: 1273782068}
   pd: {fileID: 11400000, guid: c83620affcb1e804fb67658994d3bde4, type: 2}
+  boss: {fileID: 11400000, guid: 3296fab91066859418fa678f3a41a590, type: 2}
   testing: 0
   us: {fileID: 1237189896}
 --- !u!1 &1238275919

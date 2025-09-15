@@ -13,6 +13,7 @@ public class Bosses : ScriptableObject
     GameObject[] enemyParts = new GameObject[1];
     public float health = 100.0f;
     public float maxHealth = 100.0f;
+    public string targetScene = "WorldWorld";
     //Add strings for dialogue
     //Add uhhhhhhhhhhh
 }
