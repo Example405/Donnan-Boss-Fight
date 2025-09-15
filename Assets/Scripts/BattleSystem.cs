@@ -18,6 +18,7 @@ public class BattleSystem : MonoBehaviour
     float attackbarEndingPoint = 875.0f;
     public GameObject attackBar;
     public Player pd;
+    public Bosses boss;
 
 
     public int testing = 0;
@@ -124,11 +125,12 @@ public class BattleSystem : MonoBehaviour
             }
         }
         else if (turn == 4) {
-            //add spare functionality
+            /*add spare functionality
             if (Input.GetKeyDown(KeyCode.Backspace)) {
                 us.HideButtonMenu(2);
                 turn = 1;
-            }
+            } */
+            LeaveBattleScene();
         }
         else if (turn == 5) {
             Debug.Log("Turn Going On 5");
@@ -153,6 +155,6 @@ public class BattleSystem : MonoBehaviour
     }   
 
     public void LeaveBattleScene () {
-        SceneManager.LoadScene("WorldWorld");
+        SceneManager.LoadScene(boss.targetScene);
     }
 }
