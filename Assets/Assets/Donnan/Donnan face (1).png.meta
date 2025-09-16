@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Donnan face (1)_0: 3926763233485430734
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
