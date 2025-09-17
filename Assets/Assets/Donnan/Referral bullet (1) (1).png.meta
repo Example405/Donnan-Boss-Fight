@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Referral bullet (1) (1)_0: 3010595019714560702
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

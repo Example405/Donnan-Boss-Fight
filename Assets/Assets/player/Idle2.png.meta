@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0d2f007909448ba4b86814a41ffce891
+guid: 035f438973f88d3419396e2636786de9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1726603769146854899
-    second: cabb_0
+      213: -8157529274441160004
+    second: Idle2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 400
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cabb_0
+      name: Idle2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 227
-        height: 222
+        width: 476
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d02b628150fd908e0800000000000000
-      internalID: -1726603769146854899
+      spriteID: cbaa5186852aace80800000000000000
+      internalID: -8157529274441160004
       vertices: []
       indices: 
       edges: []
@@ -131,7 +131,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cabb_0: -1726603769146854899
+      Idle2_0: -8157529274441160004
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
