@@ -63,7 +63,8 @@ public class UIScript : MonoBehaviour
         iM.GetChild(item).GetComponent<TextMeshProUGUI>().color = Color.yellow;
     }
 
-    public void ShowSpareMenu() {
+    public void ShowSpareMenu()
+    {
         //TBD
     }
 
@@ -167,7 +168,6 @@ public class UIScript : MonoBehaviour
         //HideBattleButtons();
         ShowBattleButtons();
         HideBattleWorld();
-        HideHealthBar();
     }
 
     

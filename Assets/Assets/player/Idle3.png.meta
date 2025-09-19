@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 01057dce113116e4b9892d0cdfc21f72
+guid: 17d09121c17b22949b055c1ed4a3a63c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -229798831557547100
-    second: Donnan torso (1)_0
+      213: 8050079004319037636
+    second: Idle3_0
+  - first:
+      213: 6591741037096829927
+    second: Idle3_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Donnan torso (1)_0
+      name: Idle3_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 86
-        height: 135
+        y: 7
+        width: 263
+        height: 494
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +117,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ab66332e279fccf0800000000000000
-      internalID: -229798831557547100
+      spriteID: 4c8344a0430a7bf60800000000000000
+      internalID: 8050079004319037636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle3_1
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 0
+        width: 281
+        height: 501
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e385877c819a7b50800000000000000
+      internalID: 6591741037096829927
       vertices: []
       indices: 
       edges: []
@@ -123,7 +147,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -131,7 +155,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Donnan torso (1)_0: -229798831557547100
+      Idle3_0: 8050079004319037636
+      Idle3_1: 6591741037096829927
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

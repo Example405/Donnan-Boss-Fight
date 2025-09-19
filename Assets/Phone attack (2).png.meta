@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 01057dce113116e4b9892d0cdfc21f72
+guid: f712217ce88d8d04385a430009366b77
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -229798831557547100
-    second: Donnan torso (1)_0
+      213: 3231614722339717212
+    second: Phone attack (2)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Donnan torso (1)_0
+      name: Phone attack (2)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 86
-        height: 135
+        width: 234
+        height: 482
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ab66332e279fccf0800000000000000
-      internalID: -229798831557547100
+      spriteID: c504bf7d77009dc20800000000000000
+      internalID: 3231614722339717212
       vertices: []
       indices: 
       edges: []
@@ -131,7 +131,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Donnan torso (1)_0: -229798831557547100
+      Phone attack (2)_0: 3231614722339717212
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

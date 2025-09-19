@@ -26,21 +26,31 @@ public class BattleSystem : MonoBehaviour
     public UIScript us;
 
 
-    public void Start() {
+    public void Start()
+    {
         us.ExitBattleUI();
         us.SelectButton(buttonOn - 1, buttonOn - 1);
+        for (int i = 0; i < pd.items.Length; i++)
+        {
+            pd.items[i].uses = pd.items[i].maxUses;
+            if (pd.items[i].hasDiscoveredItem = true)
+                pd.items[i].hasItem = true;
+        }
     }
 
     void Update() {
-        if (turn == 1) {
-            if (Input.GetKeyDown(KeyCode.A)) {
+        if (turn == 1)
+        {
+            if (Input.GetKeyDown(KeyCode.A))
+            {
                 int tempButton = buttonOn;
                 buttonOn -= 1;
                 if (buttonOn <= 0)
                     buttonOn = 3;
                 us.SelectButton(buttonOn - 1, tempButton - 1);
             }
-            else if (Input.GetKeyDown(KeyCode.D)) {
+            else if (Input.GetKeyDown(KeyCode.D))
+            {
                 int tempButton = buttonOn;
                 buttonOn += 1;
                 if (buttonOn >= 4)
@@ -48,65 +58,75 @@ public class BattleSystem : MonoBehaviour
                 us.SelectButton(buttonOn - 1, tempButton - 1);
             }
 
-            if (Input.GetKeyDown(KeyCode.Return)) {
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
                 turn = buttonOn + 1;
                 if (buttonOn != 2)
                     us.LoadButtonMenu(buttonOn - 1);
-                else  
+                else
                     us.LoadButtonMenu(buttonOn - 1, pd.items);
-            } 
+            }
         }
 
-        else if (turn == 2) {
+        else if (turn == 2)
+        {
             //add battle functionality
             timeAdd += Time.deltaTime;
-            attackBar.transform.GetChild(0).GetComponent<RectTransform>().anchoredPosition = new Vector2(Mathf.Lerp(attackbarStartingPoint, attackbarEndingPoint, timeAdd/barTime), 0.0f);
+            attackBar.transform.GetChild(0).GetComponent<RectTransform>().anchoredPosition = new Vector2(Mathf.Lerp(attackbarStartingPoint, attackbarEndingPoint, timeAdd / barTime), 0.0f);
             /*
             if (Input.GetKeyDown(KeyCode.Backspace)) {
                 us.HideButtonMenu(0);
                 turn = 1;
             } */
-            if (timeAdd >= barTime) {
+            if (timeAdd >= barTime)
+            {
                 attackBar.transform.GetChild(0).GetComponent<RectTransform>().anchoredPosition = new Vector2(attackbarStartingPoint, 0.0f);
                 us.HideAttackBar();
                 timeAdd = 0.0f;
                 turn = 5;
             }
-            if (Input.GetKeyDown(KeyCode.Space)) {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
                 //attack
                 us.HideAttackBar();
                 timeAdd = 0.0f;
                 turn = 5;
                 testing += 1;
-                if (testing == 2) {
+                if (testing == 2)
+                {
                     LeaveBattleScene();
                 }
             }
         }
-        else if (turn == 3) {
+        else if (turn == 3)
+        {
             //add item functionality
-            if (Input.GetKeyDown(KeyCode.A)) {
+            if (Input.GetKeyDown(KeyCode.A))
+            {
                 int tempOn = itemOn;
                 itemOn -= 4;
                 if (itemOn <= 0)
                     itemOn += 12;
                 us.SelectItem(itemOn - 1, tempOn - 1);
             }
-            else if (Input.GetKeyDown(KeyCode.D)) {
+            else if (Input.GetKeyDown(KeyCode.D))
+            {
                 int tempOn = itemOn;
                 itemOn += 4;
                 if (itemOn >= 13)
                     itemOn -= 12;
                 us.SelectItem(itemOn - 1, tempOn - 1);
             }
-            else if (Input.GetKeyDown(KeyCode.W)) {
+            else if (Input.GetKeyDown(KeyCode.W))
+            {
                 int tempOn = itemOn;
                 itemOn -= 1;
                 if (itemOn % 4 == 0)
                     itemOn += 4;
                 us.SelectItem(itemOn - 1, tempOn - 1);
             }
-            else if (Input.GetKeyDown(KeyCode.S)) {
+            else if (Input.GetKeyDown(KeyCode.S))
+            {
                 int tempOn = itemOn;
                 if (itemOn % 4 == 0)
                     itemOn -= 3;
@@ -115,16 +135,31 @@ public class BattleSystem : MonoBehaviour
                 us.SelectItem(itemOn - 1, tempOn - 1);
             }
 
-            if (Input.GetKeyDown(KeyCode.Backspace)) {
+            if (Input.GetKeyDown(KeyCode.Backspace))
+            {
                 us.HideButtonMenu(1);
                 turn = 1;
             }
-            if (Input.GetKeyDown(KeyCode.Return)) {
-                us.HideItemMenu();
-                turn = 5;
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                Item item = pd.items[itemOn - 1];
+                if (item.hasItem)
+                {
+                    pd.HealPlayer(item.healAmt);
+                    boss.DamageBoss(item.dmgAmt);
+                    item.uses -= 1;
+                    if (item.uses == 0)
+                    {
+                        item.hasItem = false;
+                    }
+                    us.HideItemMenu();
+                    turn = 5;
+                }
+
             }
         }
-        else if (turn == 4) {
+        else if (turn == 4)
+        {
             /*add spare functionality
             if (Input.GetKeyDown(KeyCode.Backspace)) {
                 us.HideButtonMenu(2);
@@ -132,20 +167,23 @@ public class BattleSystem : MonoBehaviour
             } */
             LeaveBattleScene();
         }
-        else if (turn == 5) {
+        else if (turn == 5)
+        {
             Debug.Log("Turn Going On 5");
             turn = 6;
             us.ShowBattleWorld();
             us.ShowHealthBar();
+            us.healthSlider.value = pd.health / pd.maxHealth;
         }
-        else if (turn == 6) {
+        else if (turn == 6)
+        {
             timeAdd += Time.deltaTime;
             //Choose random attack here
             //Set time based on scriptableobject attack
-            if (timeAdd >= timeBeforeRestart) {
+            if (timeAdd >= timeBeforeRestart)
+            {
                 turn = 1;
                 us.HideBattleWorld();
-                us.HideHealthBar();
                 us.ShowBattleButtons();
                 us.SelectButton(0, 0);
                 timeAdd = 0.0f;

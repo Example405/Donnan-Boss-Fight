@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 01057dce113116e4b9892d0cdfc21f72
+guid: 7ec98493329885342aae74cb257b3286
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -229798831557547100
-    second: Donnan torso (1)_0
+      213: -7854629474860912292
+    second: Damage_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Donnan torso (1)_0
+      name: Damage_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 86
-        height: 135
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ab66332e279fccf0800000000000000
-      internalID: -229798831557547100
+      spriteID: c513a94bb10cef290800000000000000
+      internalID: -7854629474860912292
       vertices: []
       indices: 
       edges: []
@@ -131,7 +131,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Donnan torso (1)_0: -229798831557547100
+      Damage_0: -7854629474860912292
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
