@@ -168,7 +168,6 @@ public class UIScript : MonoBehaviour
         //HideBattleButtons();
         ShowBattleButtons();
         HideBattleWorld();
-        HideHealthBar();
     }
 
     

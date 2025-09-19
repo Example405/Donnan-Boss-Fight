@@ -184,7 +184,6 @@ public class BattleSystem : MonoBehaviour
             {
                 turn = 1;
                 us.HideBattleWorld();
-                us.HideHealthBar();
                 us.ShowBattleButtons();
                 us.SelectButton(0, 0);
                 timeAdd = 0.0f;
