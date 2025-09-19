@@ -19,10 +19,7 @@ public class PlayerLife : MonoBehaviour
 
 
     //ok
-
-    public float maxHealth = 100.0f;
-    public float health = 100.0f;
-    public float regeneration = 2.0f;
+    public Player pd;
     public float damageCooldown = 0.1f;
     public bool canBeHit = true;
     private float timeSinceHit = 0.0f;
@@ -42,9 +39,9 @@ public class PlayerLife : MonoBehaviour
     public bool DamagePlayer(float damage) {
         if (canBeHit) {
             canBeHit = false;
-            health -= damage;
-            StartCoroutine(us.ChangeBar(health/maxHealth, damage/maxHealth));
-            if (health <= 0) {
+            pd.health -= damage;
+            StartCoroutine(us.ChangeBar(pd.health/pd.maxHealth, damage/pd.maxHealth));
+            if (pd.health <= 0) {
                 KillPlayer();
             }
             return true;
@@ -52,12 +49,13 @@ public class PlayerLife : MonoBehaviour
         return false;
     }
 
-    private void KillPlayer() {
+    private void KillPlayer()
+    {
         //add functionality here
         us.HideBattleButtons();
         us.HideHealthBar();
         us.ShowDeathScreen();
-        
+
         gameObject.SetActive(false);
     }
 }

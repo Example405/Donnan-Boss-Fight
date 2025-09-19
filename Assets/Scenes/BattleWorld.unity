@@ -527,7 +527,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 344541376}
-  - {fileID: 497618503}
   - {fileID: 1262767888}
   - {fileID: 917594326}
   m_Father: {fileID: 0}
@@ -561,6 +560,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 497618503}
   - {fileID: 1522742736}
   - {fileID: 265146703}
   - {fileID: 1712899766}
@@ -1005,11 +1005,11 @@ Transform:
   m_GameObject: {fileID: 497618502}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.58, y: -0.34, z: 0}
+  m_LocalPosition: {x: -3.08, y: -0.34, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 304777964}
+  m_Father: {fileID: 344541376}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &497618504
 MonoBehaviour:
@@ -1023,9 +1023,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f00904f3143402941b3e68982c98e95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  health: 100
-  regeneration: 2
+  pd: {fileID: 11400000, guid: c83620affcb1e804fb67658994d3bde4, type: 2}
   damageCooldown: 1.5
   canBeHit: 1
   us: {fileID: 1237189896}

@@ -12,3 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 560547ee3f3c8ae4ea66868fc51c68a9, type: 3}
   m_Name: Item 5
   m_EditorClassIdentifier: 
+  name: Paper Airplane
+  healAmt: 0
+  healPercent: 0
+  dmgAmt: 0
+  dmgPercent: 0
+  uses: 1
+  maxUses: 1
+  hasDiscoveredItem: 1
+  hasItem: 1

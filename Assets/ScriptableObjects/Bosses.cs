@@ -16,4 +16,12 @@ public class Bosses : ScriptableObject
     public string targetScene = "WorldWorld";
     //Add strings for dialogue
     //Add uhhhhhhhhhhh
+
+    public bool DamageBoss(float damage)
+    {
+        health -= damage;
+        if (health <= 0)
+            return true;
+        return false;
+    }
 }
