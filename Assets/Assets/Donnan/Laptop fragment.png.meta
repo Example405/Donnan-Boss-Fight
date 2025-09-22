@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Laptop fragment_0: -5211472018109565343
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

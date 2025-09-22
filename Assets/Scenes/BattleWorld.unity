@@ -518,7 +518,6 @@ GameObject:
   m_Component:
   - component: {fileID: 138572717}
   - component: {fileID: 138572719}
-  - component: {fileID: 138572718}
   m_Layer: 0
   m_Name: testAttack (1)
   m_TagString: Untagged
@@ -541,28 +540,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 868749102}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &138572718
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 138572716}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 81e2b8c96b38f4047843b77d121d588d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &138572719
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -627,7 +604,6 @@ GameObject:
   m_Component:
   - component: {fileID: 140405700}
   - component: {fileID: 140405702}
-  - component: {fileID: 140405701}
   m_Layer: 0
   m_Name: testAttack
   m_TagString: Untagged
@@ -650,28 +626,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 868749102}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -3.847}
---- !u!95 &140405701
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 140405699}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 81e2b8c96b38f4047843b77d121d588d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &140405702
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -822,6 +776,7 @@ GameObject:
   m_Component:
   - component: {fileID: 233414205}
   - component: {fileID: 233414206}
+  - component: {fileID: 233414207}
   m_Layer: 0
   m_Name: Laptop fragment2 (1)_0 (3)
   m_TagString: Untagged
@@ -887,17 +842,63 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3832007600107207257, guid: d1e06f0e13d8fc744bc80aae66a8240a, type: 3}
+  m_Sprite: {fileID: -5211472018109565343, guid: 736a56cdaf98cf147914f5db995082c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.1, y: 3.84}
+  m_Size: {x: 3.22, y: 3.54}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &233414207
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233414204}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.22, y: 3.54}
+    newSize: {x: 3.22, y: 3.54}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 3.22, y: 3.54}
+  m_EdgeRadius: 0
 --- !u!1 &265146702
 GameObject:
   m_ObjectHideFlags: 0
@@ -1197,7 +1198,6 @@ GameObject:
   m_Component:
   - component: {fileID: 360879450}
   - component: {fileID: 360879452}
-  - component: {fileID: 360879451}
   m_Layer: 0
   m_Name: testAttack (3)
   m_TagString: Untagged
@@ -1220,28 +1220,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1764379583}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &360879451
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 360879449}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 81e2b8c96b38f4047843b77d121d588d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &360879452
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1306,7 +1284,6 @@ GameObject:
   m_Component:
   - component: {fileID: 363731842}
   - component: {fileID: 363731844}
-  - component: {fileID: 363731843}
   m_Layer: 0
   m_Name: testAttack (4)
   m_TagString: Untagged
@@ -1329,28 +1306,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1764379583}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &363731843
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 363731841}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 81e2b8c96b38f4047843b77d121d588d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &363731844
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1415,7 +1370,6 @@ GameObject:
   m_Component:
   - component: {fileID: 374947252}
   - component: {fileID: 374947254}
-  - component: {fileID: 374947253}
   m_Layer: 0
   m_Name: testAttack (1)
   m_TagString: Untagged
@@ -1438,28 +1392,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1764379583}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &374947253
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 374947251}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 81e2b8c96b38f4047843b77d121d588d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &374947254
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2485,6 +2417,7 @@ GameObject:
   m_Component:
   - component: {fileID: 657576282}
   - component: {fileID: 657576283}
+  - component: {fileID: 657576284}
   m_Layer: 0
   m_Name: Laptop fragment (1)_0 (4)
   m_TagString: Untagged
@@ -2550,17 +2483,63 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7307225731553565690, guid: 4b850e536dc1b7c46af62618e6e50f51, type: 3}
+  m_Sprite: {fileID: 4408728381071618814, guid: 166c338ac73b1274b8079f78b0c66b63, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.22, y: 3.54}
+  m_Size: {x: 5.1, y: 3.84}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &657576284
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657576281}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.1, y: 3.84}
+    newSize: {x: 5.1, y: 3.84}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 5.1, y: 3.84}
+  m_EdgeRadius: 0
 --- !u!1 &666648478
 GameObject:
   m_ObjectHideFlags: 0
@@ -2657,7 +2636,6 @@ GameObject:
   m_Component:
   - component: {fileID: 699686826}
   - component: {fileID: 699686828}
-  - component: {fileID: 699686827}
   m_Layer: 0
   m_Name: testAttack (4)
   m_TagString: Untagged
@@ -2680,28 +2658,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1465785241}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &699686827
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 699686825}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 81e2b8c96b38f4047843b77d121d588d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &699686828
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3097,7 +3053,6 @@ GameObject:
   m_Component:
   - component: {fileID: 764800032}
   - component: {fileID: 764800034}
-  - component: {fileID: 764800033}
   m_Layer: 0
   m_Name: testAttack (2)
   m_TagString: Untagged
@@ -3120,28 +3075,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1764379583}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &764800033
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 764800031}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 81e2b8c96b38f4047843b77d121d588d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &764800034
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3206,6 +3139,7 @@ GameObject:
   m_Component:
   - component: {fileID: 834457631}
   - component: {fileID: 834457632}
+  - component: {fileID: 834457633}
   m_Layer: 0
   m_Name: Laptop fragment3 (1)_0 (2)
   m_TagString: Untagged
@@ -3271,7 +3205,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6534605996057756090, guid: 04c98ad79c5bf1b40a82fcf51488f34a, type: 3}
+  m_Sprite: {fileID: -952897918762782068, guid: ba30a2d7c6766f04a885ceccffa5504e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3279,9 +3213,55 @@ SpriteRenderer:
   m_Size: {x: 5.86, y: 2.88}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &834457633
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834457630}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.86, y: 2.88}
+    newSize: {x: 5.86, y: 2.88}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 5.86, y: 2.88}
+  m_EdgeRadius: 0
 --- !u!1 &848200567
 GameObject:
   m_ObjectHideFlags: 0
@@ -3428,7 +3408,6 @@ GameObject:
   m_Component:
   - component: {fileID: 854627873}
   - component: {fileID: 854627875}
-  - component: {fileID: 854627874}
   m_Layer: 0
   m_Name: testAttack (3)
   m_TagString: Untagged
@@ -3451,28 +3430,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1465785241}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &854627874
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 854627872}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 81e2b8c96b38f4047843b77d121d588d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &854627875
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3537,6 +3494,7 @@ GameObject:
   m_Component:
   - component: {fileID: 856681526}
   - component: {fileID: 856681527}
+  - component: {fileID: 856681528}
   m_Layer: 0
   m_Name: Laptop fragment2 (1)_0 (1)
   m_TagString: Untagged
@@ -3602,17 +3560,63 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3832007600107207257, guid: d1e06f0e13d8fc744bc80aae66a8240a, type: 3}
+  m_Sprite: {fileID: -5211472018109565343, guid: 736a56cdaf98cf147914f5db995082c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.1, y: 3.84}
+  m_Size: {x: 3.22, y: 3.54}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &856681528
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856681525}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.22, y: 3.54}
+    newSize: {x: 3.22, y: 3.54}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 3.22, y: 3.54}
+  m_EdgeRadius: 0
 --- !u!1 &868749100
 GameObject:
   m_ObjectHideFlags: 0
@@ -4062,7 +4066,6 @@ GameObject:
   m_Component:
   - component: {fileID: 949750396}
   - component: {fileID: 949750395}
-  - component: {fileID: 949750394}
   m_Layer: 0
   m_Name: testAttack
   m_TagString: Untagged
@@ -4070,28 +4073,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &949750394
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 949750393}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 81e2b8c96b38f4047843b77d121d588d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &949750395
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4171,6 +4152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 950169482}
   - component: {fileID: 950169483}
+  - component: {fileID: 950169484}
   m_Layer: 0
   m_Name: Laptop fragment (1)_0 (1)
   m_TagString: Untagged
@@ -4236,17 +4218,63 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7307225731553565690, guid: 4b850e536dc1b7c46af62618e6e50f51, type: 3}
+  m_Sprite: {fileID: 4408728381071618814, guid: 166c338ac73b1274b8079f78b0c66b63, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.22, y: 3.54}
+  m_Size: {x: 5.1, y: 3.84}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &950169484
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950169481}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.1, y: 3.84}
+    newSize: {x: 5.1, y: 3.84}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 5.1, y: 3.84}
+  m_EdgeRadius: 0
 --- !u!1 &951100344
 GameObject:
   m_ObjectHideFlags: 0
@@ -4657,7 +4685,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1010271603}
   - component: {fileID: 1010271605}
-  - component: {fileID: 1010271604}
   m_Layer: 0
   m_Name: testAttack (4)
   m_TagString: Untagged
@@ -4680,28 +4707,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 868749102}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1010271604
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1010271602}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 81e2b8c96b38f4047843b77d121d588d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &1010271605
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4852,6 +4857,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1051447981}
   - component: {fileID: 1051447982}
+  - component: {fileID: 1051447983}
   m_Layer: 0
   m_Name: Laptop big fragment (ONLY MAKE IT APPEAR ONCE SMALL FRAGMENTS HAVE ALL
     FALLEN) (1) (1)_0
@@ -4918,7 +4924,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3404612520593214754, guid: fa7d484eea444304ebb9db0a0a7c72cf, type: 3}
+  m_Sprite: {fileID: 1026746318390324080, guid: c59ebe48611fcb447994dd3521129a16, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4926,9 +4932,92 @@ SpriteRenderer:
   m_Size: {x: 8.25, y: 4.92}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!68 &1051447983
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051447980}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -4.049504, y: -2.4611812}
+  - {x: -4.154944, y: -2.232237}
+  - {x: -4.0979786, y: -1.5967866}
+  - {x: -3.8030567, y: -0.8558836}
+  - {x: -3.5633912, y: -0.3954837}
+  - {x: -2.7252347, y: -0.060897946}
+  - {x: -2.2179363, y: -0.09068687}
+  - {x: -2.2461147, y: 0.54422104}
+  - {x: 1.9822257, y: 0.5340972}
+  - {x: 2.0431712, y: -0.30888066}
+  - {x: 2.5847545, y: -0.32011884}
+  - {x: 2.9872, y: -0.0780316}
+  - {x: 3.1529918, y: 0.26296827}
+  - {x: 3.160786, y: 0.68881476}
+  - {x: 3.380105, y: 0.76244503}
+  - {x: 3.4705706, y: 1.1235886}
+  - {x: 3.177226, y: 1.4500461}
+  - {x: 3.201237, y: 1.9273301}
+  - {x: 3.3299901, y: 2.4147456}
+  - {x: 3.459638, y: 1.9830418}
+  - {x: 3.704633, y: 2.3951356}
+  - {x: 3.8588889, y: 2.029057}
+  - {x: 4.091366, y: 2.0511723}
+  - {x: 4.124315, y: 1.5034099}
+  - {x: 3.9666486, y: 1.48484}
+  - {x: 3.939969, y: 0.65054816}
+  - {x: 3.681588, y: 0.4819506}
+  - {x: 3.693295, y: -0.047229588}
+  - {x: 3.2795877, y: -0.5892382}
+  - {x: 2.745071, y: -0.82120675}
+  - {x: 2.0734131, y: -0.8219145}
+  - {x: 2.0266023, y: -1.6036545}
+  - {x: -2.1600914, y: -1.6971369}
+  - {x: -2.1755323, y: -0.6338675}
+  - {x: -2.8397837, y: -0.66628027}
+  - {x: -3.2494369, y: -0.8066157}
+  - {x: -3.4048052, y: -1.6379039}
+  - {x: -3.5805156, y: -1.6970432}
+  - {x: -3.6417463, y: -2.1915295}
+  - {x: -3.7876866, y: -2.4397268}
+  - {x: -3.8728635, y: -2.2074285}
+  - {x: -4.003561, y: -2.4472432}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &1055667809
 GameObject:
   m_ObjectHideFlags: 0
@@ -4939,7 +5028,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1055667810}
   - component: {fileID: 1055667812}
-  - component: {fileID: 1055667811}
   m_Layer: 0
   m_Name: testAttack (3)
   m_TagString: Untagged
@@ -4962,28 +5050,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 868749102}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1055667811
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1055667809}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 81e2b8c96b38f4047843b77d121d588d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &1055667812
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5181,6 +5247,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1083697904}
   - component: {fileID: 1083697905}
+  - component: {fileID: 1083697906}
   m_Layer: 0
   m_Name: Laptop fragment3 (1)_0 (4)
   m_TagString: Untagged
@@ -5246,7 +5313,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6534605996057756090, guid: 04c98ad79c5bf1b40a82fcf51488f34a, type: 3}
+  m_Sprite: {fileID: -952897918762782068, guid: ba30a2d7c6766f04a885ceccffa5504e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5254,9 +5321,55 @@ SpriteRenderer:
   m_Size: {x: 5.86, y: 2.88}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1083697906
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083697903}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.86, y: 2.88}
+    newSize: {x: 5.86, y: 2.88}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 5.86, y: 2.88}
+  m_EdgeRadius: 0
 --- !u!1 &1089202495
 GameObject:
   m_ObjectHideFlags: 0
@@ -5353,6 +5466,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1197652845}
   - component: {fileID: 1197652846}
+  - component: {fileID: 1197652847}
   m_Layer: 0
   m_Name: Laptop fragment3 (1)_0 (1)
   m_TagString: Untagged
@@ -5418,7 +5532,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6534605996057756090, guid: 04c98ad79c5bf1b40a82fcf51488f34a, type: 3}
+  m_Sprite: {fileID: -952897918762782068, guid: ba30a2d7c6766f04a885ceccffa5504e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5426,9 +5540,55 @@ SpriteRenderer:
   m_Size: {x: 5.86, y: 2.88}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1197652847
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197652844}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.86, y: 2.88}
+    newSize: {x: 5.86, y: 2.88}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 5.86, y: 2.88}
+  m_EdgeRadius: 0
 --- !u!1 &1226205370
 GameObject:
   m_ObjectHideFlags: 0
@@ -5525,7 +5685,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1233908687}
   - component: {fileID: 1233908689}
-  - component: {fileID: 1233908688}
   m_Layer: 0
   m_Name: testAttack (2)
   m_TagString: Untagged
@@ -5548,28 +5707,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1465785241}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1233908688
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1233908686}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 81e2b8c96b38f4047843b77d121d588d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &1233908689
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6332,6 +6469,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1384524905}
   - component: {fileID: 1384524906}
+  - component: {fileID: 1384524907}
   m_Layer: 0
   m_Name: Laptop fragment3 (1)_0 (3)
   m_TagString: Untagged
@@ -6397,7 +6535,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6534605996057756090, guid: 04c98ad79c5bf1b40a82fcf51488f34a, type: 3}
+  m_Sprite: {fileID: -952897918762782068, guid: ba30a2d7c6766f04a885ceccffa5504e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6405,9 +6543,55 @@ SpriteRenderer:
   m_Size: {x: 5.86, y: 2.88}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1384524907
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384524904}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.86, y: 2.88}
+    newSize: {x: 5.86, y: 2.88}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 5.86, y: 2.88}
+  m_EdgeRadius: 0
 --- !u!1 &1384981749
 GameObject:
   m_ObjectHideFlags: 0
@@ -7472,7 +7656,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1710000305}
   - component: {fileID: 1710000307}
-  - component: {fileID: 1710000306}
   m_Layer: 0
   m_Name: testAttack
   m_TagString: Untagged
@@ -7495,28 +7678,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1465785241}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -3.847}
---- !u!95 &1710000306
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1710000304}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 81e2b8c96b38f4047843b77d121d588d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &1710000307
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7834,6 +7995,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1759602442}
   - component: {fileID: 1759602443}
+  - component: {fileID: 1759602444}
   m_Layer: 0
   m_Name: Laptop fragment2 (1)_0 (4)
   m_TagString: Untagged
@@ -7899,17 +8061,63 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3832007600107207257, guid: d1e06f0e13d8fc744bc80aae66a8240a, type: 3}
+  m_Sprite: {fileID: -5211472018109565343, guid: 736a56cdaf98cf147914f5db995082c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.1, y: 3.84}
+  m_Size: {x: 3.22, y: 3.54}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1759602444
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759602441}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.22, y: 3.54}
+    newSize: {x: 3.22, y: 3.54}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 3.22, y: 3.54}
+  m_EdgeRadius: 0
 --- !u!1 &1764379581
 GameObject:
   m_ObjectHideFlags: 0
@@ -7979,6 +8187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1770341792}
   - component: {fileID: 1770341793}
+  - component: {fileID: 1770341794}
   m_Layer: 0
   m_Name: Laptop fragment2 (1)_0 (2)
   m_TagString: Untagged
@@ -8044,17 +8253,63 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3832007600107207257, guid: d1e06f0e13d8fc744bc80aae66a8240a, type: 3}
+  m_Sprite: {fileID: -5211472018109565343, guid: 736a56cdaf98cf147914f5db995082c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5.1, y: 3.84}
+  m_Size: {x: 3.22, y: 3.54}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1770341794
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770341791}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.22, y: 3.54}
+    newSize: {x: 3.22, y: 3.54}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 3.22, y: 3.54}
+  m_EdgeRadius: 0
 --- !u!1 &1801824301
 GameObject:
   m_ObjectHideFlags: 0
@@ -8276,7 +8531,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1848560588}
   - component: {fileID: 1848560590}
-  - component: {fileID: 1848560589}
   m_Layer: 0
   m_Name: testAttack (1)
   m_TagString: Untagged
@@ -8299,28 +8553,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1465785241}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1848560589
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1848560587}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 81e2b8c96b38f4047843b77d121d588d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &1848560590
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8939,6 +9171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1918292492}
   - component: {fileID: 1918292493}
+  - component: {fileID: 1918292494}
   m_Layer: 0
   m_Name: Laptop fragment (1)_0 (2)
   m_TagString: Untagged
@@ -9004,17 +9237,63 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7307225731553565690, guid: 4b850e536dc1b7c46af62618e6e50f51, type: 3}
+  m_Sprite: {fileID: 4408728381071618814, guid: 166c338ac73b1274b8079f78b0c66b63, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.22, y: 3.54}
+  m_Size: {x: 5.1, y: 3.84}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1918292494
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918292491}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.1, y: 3.84}
+    newSize: {x: 5.1, y: 3.84}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 5.1, y: 3.84}
+  m_EdgeRadius: 0
 --- !u!1 &1931623655
 GameObject:
   m_ObjectHideFlags: 0
@@ -9585,6 +9864,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2053971401}
   - component: {fileID: 2053971402}
+  - component: {fileID: 2053971403}
   m_Layer: 0
   m_Name: Laptop fragment (1)_0 (3)
   m_TagString: Untagged
@@ -9650,17 +9930,63 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7307225731553565690, guid: 4b850e536dc1b7c46af62618e6e50f51, type: 3}
+  m_Sprite: {fileID: 4408728381071618814, guid: 166c338ac73b1274b8079f78b0c66b63, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.22, y: 3.54}
+  m_Size: {x: 5.1, y: 3.84}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &2053971403
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053971400}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.1, y: 3.84}
+    newSize: {x: 5.1, y: 3.84}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 5.1, y: 3.84}
+  m_EdgeRadius: 0
 --- !u!1 &2072031903
 GameObject:
   m_ObjectHideFlags: 0
@@ -9671,7 +9997,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2072031904}
   - component: {fileID: 2072031906}
-  - component: {fileID: 2072031905}
   m_Layer: 0
   m_Name: testAttack (2)
   m_TagString: Untagged
@@ -9694,28 +10019,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 868749102}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &2072031905
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2072031903}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 81e2b8c96b38f4047843b77d121d588d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!212 &2072031906
 SpriteRenderer:
   m_ObjectHideFlags: 0
