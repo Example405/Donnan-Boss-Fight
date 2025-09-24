@@ -17,6 +17,7 @@ public class UIScript : MonoBehaviour
     public GameObject heart;
     public Transform iM;
     public Slider healthSlider;
+    public Slider bossHealthSlider;
 
     public void HideBattleButtons() {
         buttons[0].SetActive(false);
@@ -147,6 +148,16 @@ public class UIScript : MonoBehaviour
         float time = 0.0f;
         while (time <= 1) {
             healthSlider.value = Mathf.Lerp(currentHealth + damage, currentHealth, time);
+            time += Time.deltaTime * 8.0f;
+            yield return null;
+        }
+
+    }
+
+    public IEnumerator ChangeBossBar(float currentHealth, float damage) {
+        float time = 0.0f;
+        while (time <= 1) {
+            bossHealthSlider.value = Mathf.Lerp(currentHealth + damage, currentHealth, time);
             time += Time.deltaTime * 8.0f;
             yield return null;
         }

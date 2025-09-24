@@ -9,6 +9,7 @@ public class BattleSystem : MonoBehaviour
     //5 == Enemy's turn; 6 == player move
     int turn = 1;
     //1 == attack, 2 == item, 3 == spare
+    bool hasAttacked = false;
     int buttonOn = 1;
     int itemOn = 1;
     float timeBeforeRestart = 5.0f;
@@ -20,6 +21,7 @@ public class BattleSystem : MonoBehaviour
     public Player pd;
     public Bosses boss;
     private GameObject currentAttack;
+    private int currentAttackNum;
 
 
     public int testing = 0;
@@ -37,6 +39,8 @@ public class BattleSystem : MonoBehaviour
             if (pd.items[i].hasDiscoveredItem = true)
                 pd.items[i].hasItem = true;
         }
+        pd.health = pd.maxHealth;
+        boss.health = boss.maxHealth;
     }
 
     void Update() {
@@ -92,11 +96,9 @@ public class BattleSystem : MonoBehaviour
                 us.HideAttackBar();
                 timeAdd = 0.0f;
                 turn = 5;
-                testing += 1;
-                if (testing == 2)
-                {
+                if (boss.DamageBoss(pd.damage))
                     LeaveBattleScene();
-                }
+                StartCoroutine(us.ChangeBossBar(boss.health/boss.maxHealth, pd.damage/boss.maxHealth));
             }
         }
         else if (turn == 3)
@@ -147,7 +149,9 @@ public class BattleSystem : MonoBehaviour
                 if (item.hasItem)
                 {
                     pd.HealPlayer(item.healAmt);
-                    boss.DamageBoss(item.dmgAmt);
+                    if (boss.DamageBoss(item.dmgAmt))
+                        LeaveBattleScene();
+                    StartCoroutine(us.ChangeBossBar(boss.health/boss.maxHealth, item.dmgAmt/boss.maxHealth));
                     item.uses -= 1;
                     if (item.uses == 0)
                     {
@@ -175,13 +179,20 @@ public class BattleSystem : MonoBehaviour
             us.ShowBattleWorld();
             us.ShowHealthBar();
             us.healthSlider.value = pd.health / pd.maxHealth;
-            currentAttack = Instantiate(boss.attackPrefabs[Random.Range(0,4)]);
+            currentAttackNum = ((int) Random.Range(0,4));
+            //((int) Random.Range(0,4));
+            currentAttack = Instantiate(boss.attackPrefabs[currentAttackNum]);
+            timeBeforeRestart = boss.attackEndTimes[currentAttackNum];
         }
         else if (turn == 6)
         {
             timeAdd += Time.deltaTime;
-            //Choose random attack here
-            //Set time based on scriptableobject attack
+
+            if (timeAdd >= boss.attackTimes[currentAttackNum] && hasAttacked == false) {
+                currentAttack.SetActive(true);
+                hasAttacked = true;
+            }
+
             if (timeAdd >= timeBeforeRestart)
             {
                 turn = 1;
@@ -190,6 +201,7 @@ public class BattleSystem : MonoBehaviour
                 us.SelectButton(0, 0);
                 timeAdd = 0.0f;
                 Destroy(currentAttack);
+                hasAttacked = false;
             }
 
         }

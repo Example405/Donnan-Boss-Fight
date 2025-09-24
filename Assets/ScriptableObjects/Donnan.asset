@@ -18,6 +18,18 @@ MonoBehaviour:
   - {fileID: 5157190704428561360, guid: 4f3d926f9ca3add49bb002226815951e, type: 3}
   - {fileID: 3530587207065158452, guid: 743981d43c4fb574d9e42419fd953a40, type: 3}
   - {fileID: 7159534179257458161, guid: 85b5026b10d53e141a268e74e6ab9271, type: 3}
-  health: 100
-  maxHealth: 100
+  attackTimes:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  attackEndTimes:
+  - 23
+  - 9
+  - 4
+  - 4
+  - 4
+  health: 230
+  maxHealth: 250
   targetScene: Donnans Office
