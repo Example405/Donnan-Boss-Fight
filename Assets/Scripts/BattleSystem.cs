@@ -19,7 +19,6 @@ public class BattleSystem : MonoBehaviour
     public GameObject attackBar;
     public Player pd;
     public Bosses boss;
-    private GameObject currentAttack;
 
 
     public int testing = 0;
@@ -175,7 +174,6 @@ public class BattleSystem : MonoBehaviour
             us.ShowBattleWorld();
             us.ShowHealthBar();
             us.healthSlider.value = pd.health / pd.maxHealth;
-            currentAttack = Instantiate(boss.attackPrefabs[Random.Range(0,4)]);
         }
         else if (turn == 6)
         {
@@ -189,7 +187,6 @@ public class BattleSystem : MonoBehaviour
                 us.ShowBattleButtons();
                 us.SelectButton(0, 0);
                 timeAdd = 0.0f;
-                Destroy(currentAttack);
             }
 
         }

@@ -8,7 +8,7 @@ public class Bosses : ScriptableObject
     //blah blah blah just add
     //ebverything bro bro
 
-    public GameObject[] attackPrefabs = new GameObject[3];
+    GameObject[] attackPrefabs = new GameObject[3];
     //add animations or sometihng
     GameObject[] enemyParts = new GameObject[1];
     public float health = 100.0f;
