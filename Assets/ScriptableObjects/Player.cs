@@ -11,6 +11,8 @@ public class Player : ScriptableObject
     public float regeneration = 2.0f;
     public Item[] items = new Item[12];
     public Bosses currentBoss;
+    public bool[] defeatedBosses = new bool[5];
+
 
 
     public void HealPlayer(float heal)

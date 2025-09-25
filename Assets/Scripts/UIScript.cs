@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
@@ -17,9 +18,18 @@ public class UIScript : MonoBehaviour
     public GameObject battleWorld;
     public GameObject attackBar;
     public GameObject heart;
+    public GameObject fade;
     public Transform iM;
     public Slider healthSlider;
     public Slider bossHealthSlider;
+    public bool isInWorld = true;
+
+    public void Start() {
+        if (isInWorld) {
+            StartCoroutine(RidFade());
+        }
+
+    }
 
     public void HideBattleButtons() {
         buttons[0].SetActive(false);
@@ -194,6 +204,31 @@ public class UIScript : MonoBehaviour
         HideBattleWorld();
     }
 
-    
+    public IEnumerator ChangeScene(string sceneName) {
+        float time = 0.0f;
+        float intendedTime = 0.5f;
+        while (time <= intendedTime) {
+            Color spriteColor = fade.GetComponent<Image>().color;
+            spriteColor.a = Mathf.Lerp(0.0f, 1.0f, time/intendedTime);
+            fade.GetComponent<Image>().color = spriteColor;
+            time += Time.deltaTime;
+            Debug.Log("Color" + spriteColor.a + " and Time: " + time);
+            yield return null;
+        }
+        SceneManager.LoadScene(sceneName);
+    }
+
+    public IEnumerator RidFade() {
+        float time = 0.0f;
+        float intendedTime = 0.5f;
+        while (time <= intendedTime) {
+            Color spriteColor = fade.GetComponent<Image>().color;
+            spriteColor.a = Mathf.Lerp(1.0f, 0.0f, time/intendedTime);
+            fade.GetComponent<Image>().color = spriteColor;
+            time += Time.deltaTime;
+            Debug.Log("Color" + spriteColor.a + " and Time: " + time);
+            yield return null;
+        }
+    }
 
 }

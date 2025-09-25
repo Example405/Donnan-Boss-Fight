@@ -14,7 +14,8 @@ public class DoorwayScript : MonoBehaviour
         if (coll.gameObject.tag == "Player") {
             if (sceneName == "BattleWorld") 
                 player.currentBoss = boss;
-            SceneManager.LoadScene(sceneName);
+            StartCoroutine(GameObject.Find("UIManager").GetComponent<UIScript>().ChangeScene(sceneName));
+            //SceneManager.LoadScene(sceneName);
 
         }
     }

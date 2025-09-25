@@ -37,7 +37,7 @@ public class BattleSystem : MonoBehaviour
         for (int i = 0; i < pd.items.Length; i++)
         {
             pd.items[i].uses = pd.items[i].maxUses;
-            if (pd.items[i].hasDiscoveredItem = true)
+            if (pd.items[i].hasDiscoveredItem == true)
                 pd.items[i].hasItem = true;
         }
         pd.health = pd.maxHealth;

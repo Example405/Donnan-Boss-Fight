@@ -119,6 +119,31 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &27206650 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5534722150969984074, guid: abc64d766dfe5c0479bc5e5b076505d2, type: 3}
+  m_PrefabInstance: {fileID: 309537953}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &27206651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27206650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49acda4cbb22ba14eaa9b69ac0380492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shouldAppear: 1
+  pd: {fileID: 11400000, guid: c83620affcb1e804fb67658994d3bde4, type: 2}
+  bossNum: 2
+--- !u!4 &27206653 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2695243878044843498, guid: abc64d766dfe5c0479bc5e5b076505d2, type: 3}
+  m_PrefabInstance: {fileID: 309537953}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &54521023
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,7 +329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd4ba17e513057d49b029f9e5abb9430, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Guidance Hallway
+  sceneName: Guidance Hallway Back
   boss: {fileID: 11400000, guid: 3296fab91066859418fa678f3a41a590, type: 2}
   player: {fileID: 11400000, guid: c83620affcb1e804fb67658994d3bde4, type: 2}
 --- !u!212 &256900716
@@ -484,8 +509,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2695243878044843498, guid: abc64d766dfe5c0479bc5e5b076505d2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1705162657}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5534722150969984074, guid: abc64d766dfe5c0479bc5e5b076505d2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 27206651}
   m_SourcePrefab: {fileID: 100100000, guid: abc64d766dfe5c0479bc5e5b076505d2, type: 3}
 --- !u!1 &400789983
 GameObject:
@@ -966,9 +997,17 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  deathButtons:
+  - {fileID: 0}
+  - {fileID: 0}
   buttonAssets:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  deathButtonAssets:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -979,9 +1018,11 @@ MonoBehaviour:
   battleWorld: {fileID: 0}
   attackBar: {fileID: 0}
   heart: {fileID: 0}
+  fade: {fileID: 932459595}
   iM: {fileID: 0}
   healthSlider: {fileID: 0}
   bossHealthSlider: {fileID: 0}
+  isInWorld: 1
 --- !u!4 &723914881
 Transform:
   m_ObjectHideFlags: 0
@@ -1263,6 +1304,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 924225319}
   m_CullTransparentMesh: 1
+--- !u!1 &932459595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 932459598}
+  - component: {fileID: 932459597}
+  - component: {fileID: 932459596}
+  m_Layer: 5
+  m_Name: Fade
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &932459596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932459595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &932459597
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932459595}
+  m_CullTransparentMesh: 1
+--- !u!224 &932459598
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932459595}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1665418117}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &974067241
 GameObject:
   m_ObjectHideFlags: 0
@@ -1549,7 +1665,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: f5b3ff48b10b742419a489c852d62d58, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1861,6 +1977,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 932459598}
   - {fileID: 1946978931}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2281,12 +2398,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1705162653}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.96, y: -0.65, z: 0}
-  m_LocalScale: {x: 2.1699247, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.95, y: -3.725, z: 0.35}
+  m_LocalScale: {x: 5.424812, y: 2.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 27206653}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1912449604
 GameObject:
@@ -2642,5 +2759,4 @@ SceneRoots:
   - {fileID: 615080126}
   - {fileID: 1249760887}
   - {fileID: 256900717}
-  - {fileID: 1705162657}
   - {fileID: 309537953}

@@ -17,5 +17,17 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Donnans Office.unity
     guid: c8883d6b5c826c84ebb3bf61a5586c54
+  - enabled: 1
+    path: Assets/Scenes/WorldWorldBack.unity
+    guid: 1b9e881f1425a684cbb2891382df6042
+  - enabled: 1
+    path: Assets/Scenes/Guidance Hallway Back.unity
+    guid: 37f70ed064949ac42a6bcf9108917c03
+  - enabled: 1
+    path: Assets/Scenes/Guidance Hallway Back2.unity
+    guid: fc44587d2829f2840a56bbfed807fbda
+  - enabled: 1
+    path: Assets/Scenes/Guidance Hallway Empty.unity
+    guid: 1afbe82ffa8867e46a3c341ffd907eb4
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
