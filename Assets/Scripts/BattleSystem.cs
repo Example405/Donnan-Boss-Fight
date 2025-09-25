@@ -22,6 +22,7 @@ public class BattleSystem : MonoBehaviour
     public Bosses boss;
     private GameObject currentAttack;
     private int currentAttackNum;
+    private bool deathbool = false;
 
 
     public int testing = 0;
@@ -66,6 +67,7 @@ public class BattleSystem : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 turn = buttonOn + 1;
+                itemOn = 1;
                 if (buttonOn != 2)
                     us.LoadButtonMenu(buttonOn - 1);
                 else
@@ -193,17 +195,37 @@ public class BattleSystem : MonoBehaviour
                 hasAttacked = true;
             }
 
-            if (timeAdd >= timeBeforeRestart)
+            if (timeAdd >= timeBeforeRestart || pd.health <= 0)
             {
                 turn = 1;
                 us.HideBattleWorld();
                 us.ShowBattleButtons();
-                us.SelectButton(0, 0);
+                us.SelectButton(0, buttonOn - 1);
+                buttonOn = 1;
                 timeAdd = 0.0f;
                 Destroy(currentAttack);
                 hasAttacked = false;
+                if (pd.health <= 0) {
+                    turn = 7;
+                    deathbool = false;
+                    us.ChangeDeathButton(false);
+                }
             }
 
+        }
+        else if (turn == 7) {
+            if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D)) {
+                deathbool = !deathbool;
+                us.ChangeDeathButton(deathbool);
+            }
+
+            if (Input.GetKeyDown(KeyCode.Return)) {
+                if (!deathbool)
+                    LeaveBattleScene();
+                else
+                    us.ExitGame();
+            }
+            
         }
     }   
 

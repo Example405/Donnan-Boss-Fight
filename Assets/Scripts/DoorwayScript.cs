@@ -7,10 +7,15 @@ public class DoorwayScript : MonoBehaviour
 {   
 
     public string sceneName = "";
+    public Bosses boss;
+    public Player player;
 
     public void OnTriggerEnter2D(Collider2D coll) {
         if (coll.gameObject.tag == "Player") {
+            if (sceneName == "BattleWorld") 
+                player.currentBoss = boss;
             SceneManager.LoadScene(sceneName);
+
         }
     }
 }

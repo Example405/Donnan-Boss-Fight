@@ -8,7 +8,9 @@ public class UIScript : MonoBehaviour
 {   
 
     public GameObject[] buttons = new GameObject[3];
+    public GameObject[] deathButtons = new GameObject[2];
     public Sprite[] buttonAssets = new Sprite[6];
+    public Sprite[] deathButtonAssets = new Sprite[4];
     public Sprite heartSprite;
     public GameObject deathScreen;
     public GameObject healthBar;
@@ -173,6 +175,17 @@ public class UIScript : MonoBehaviour
         HideBattleButtons();
         ShowBattleWorld();
         ShowHealthBar();
+    }
+
+    public void ChangeDeathButton(bool ant) {
+        if (ant) {
+            deathButtons[0].transform.GetComponent<Image>().sprite = deathButtonAssets[0];
+            deathButtons[1].transform.GetComponent<Image>().sprite = deathButtonAssets[3];
+        }
+        else {
+            deathButtons[0].transform.GetComponent<Image>().sprite = deathButtonAssets[2];
+            deathButtons[1].transform.GetComponent<Image>().sprite = deathButtonAssets[1];
+        }
     }
 
     public void ExitBattleUI() {

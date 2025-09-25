@@ -10,6 +10,7 @@ public class Player : ScriptableObject
     public float damage = 5.0f;
     public float regeneration = 2.0f;
     public Item[] items = new Item[12];
+    public Bosses currentBoss;
 
 
     public void HealPlayer(float heal)
