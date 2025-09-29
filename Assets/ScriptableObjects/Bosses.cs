@@ -7,7 +7,7 @@ public class Bosses : ScriptableObject
 {
     //blah blah blah just add
     //ebverything bro bro
-
+    public GameObject body;
     public GameObject[] attackPrefabs = new GameObject[3];
     public float[] attackTimes = new float[3];
     public float[] attackEndTimes = new float[3];

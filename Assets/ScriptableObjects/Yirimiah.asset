@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a335615a398514144ad5d4435d7fe2ab, type: 3}
+  m_Name: Yirimiah
+  m_EditorClassIdentifier: 
+  body: {fileID: 7291179336837951359, guid: 574a1fbddd97fd94c992c296f8b70060, type: 3}
+  attackPrefabs:
+  - {fileID: 866215989077466454, guid: 6dcac30290bac974dae089b77bd24fb2, type: 3}
+  - {fileID: 8868202235810146623, guid: 5273bde5297b29346b5b98324eec8455, type: 3}
+  - {fileID: 1777952075650074401, guid: ea9e0206a51ae68498bc1373e695ced6, type: 3}
+  attackTimes:
+  - 1
+  - 1
+  - 1
+  attackEndTimes:
+  - 6
+  - 3
+  - 18
+  health: 75
+  maxHealth: 75
+  targetScene: WorldWorldBack
