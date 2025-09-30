@@ -31,7 +31,8 @@ public class BattleSystem : MonoBehaviour
 
 
     public void Start()
-    {
+    {   
+        boss = pd.currentBoss;
         us.ExitBattleUI();
         us.SelectButton(buttonOn - 1, buttonOn - 1);
         for (int i = 0; i < pd.items.Length; i++)
@@ -42,6 +43,7 @@ public class BattleSystem : MonoBehaviour
         }
         pd.health = pd.maxHealth;
         boss.health = boss.maxHealth;
+        Instantiate(boss.body);
     }
 
     void Update() {
@@ -181,7 +183,7 @@ public class BattleSystem : MonoBehaviour
             us.ShowBattleWorld();
             us.ShowHealthBar();
             us.healthSlider.value = pd.health / pd.maxHealth;
-            currentAttackNum = ((int) Random.Range(0,4));
+            currentAttackNum = ((int) Random.Range(0,boss.attackPrefabs.Length));
             //((int) Random.Range(0,4));
             currentAttack = Instantiate(boss.attackPrefabs[currentAttackNum]);
             timeBeforeRestart = boss.attackEndTimes[currentAttackNum];

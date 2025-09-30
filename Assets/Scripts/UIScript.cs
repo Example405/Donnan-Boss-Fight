@@ -212,7 +212,6 @@ public class UIScript : MonoBehaviour
             spriteColor.a = Mathf.Lerp(0.0f, 1.0f, time/intendedTime);
             fade.GetComponent<Image>().color = spriteColor;
             time += Time.deltaTime;
-            Debug.Log("Color" + spriteColor.a + " and Time: " + time);
             yield return null;
         }
         SceneManager.LoadScene(sceneName);
@@ -226,7 +225,6 @@ public class UIScript : MonoBehaviour
             spriteColor.a = Mathf.Lerp(1.0f, 0.0f, time/intendedTime);
             fade.GetComponent<Image>().color = spriteColor;
             time += Time.deltaTime;
-            Debug.Log("Color" + spriteColor.a + " and Time: " + time);
             yield return null;
         }
     }
