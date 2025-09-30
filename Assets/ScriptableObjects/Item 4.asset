@@ -15,8 +15,9 @@ MonoBehaviour:
   name: Keyboard
   healAmt: 0
   healPercent: 0
-  dmgAmt: 50
-  dmgPercent: 0
-  uses: 1
+  dmgAmt: 0
+  dmgPercent: 20
+  uses: 0
   maxUses: 1
+  hasDiscoveredItem: 1
   hasItem: 0

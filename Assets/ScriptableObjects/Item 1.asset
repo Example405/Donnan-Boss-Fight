@@ -17,7 +17,7 @@ MonoBehaviour:
   healPercent: 0
   dmgAmt: 0
   dmgPercent: 0
-  uses: 0
+  uses: 1
   maxUses: 1
   hasDiscoveredItem: 1
-  hasItem: 0
+  hasItem: 1

@@ -15,9 +15,9 @@ MonoBehaviour:
   name: Ruler
   healAmt: 0
   healPercent: 0
-  dmgAmt: 60
-  dmgPercent: 0
-  uses: 5
-  maxUses: 5
+  dmgAmt: 0
+  dmgPercent: 15
+  uses: 2
+  maxUses: 2
   hasDiscoveredItem: 1
   hasItem: 1

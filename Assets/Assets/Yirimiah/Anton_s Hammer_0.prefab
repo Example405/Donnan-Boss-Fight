@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5496914265858515074}
   - component: {fileID: 5461159796862056369}
   - component: {fileID: 1327252517800196573}
+  - component: {fileID: 3209579600111049654}
+  - component: {fileID: 5288499309863949653}
   m_Layer: 0
   m_Name: Anton_s Hammer_0
   m_TagString: Untagged
@@ -109,3 +111,89 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!68 &3209579600111049654
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8868202235810146623}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.010555804, y: -0.6226435}
+  - {x: 0.124528885, y: -0.6197834}
+  - {x: 0.11823082, y: 0.11021519}
+  - {x: 0.26156616, y: 0.11028099}
+  - {x: 0.27034187, y: 0.039956093}
+  - {x: 0.4412079, y: 0.04174328}
+  - {x: 0.44420433, y: 0.6092577}
+  - {x: 0.2786045, y: 0.6172466}
+  - {x: 0.2814846, y: 0.5607567}
+  - {x: 0.12843132, y: 0.5530424}
+  - {x: 0.12495422, y: 0.61128235}
+  - {x: 0.009712219, y: 0.6085634}
+  - {x: 0.009660721, y: 0.5630741}
+  - {x: -0.11042786, y: 0.5606775}
+  - {x: -0.20331573, y: 0.5588236}
+  - {x: -0.19080162, y: 0.4578886}
+  - {x: -0.32466316, y: 0.39612198}
+  - {x: -0.3938179, y: 0.27806377}
+  - {x: -0.43870926, y: 0.14404964}
+  - {x: -0.19904327, y: 0.22514057}
+  - {x: -0.20454979, y: 0.11430359}
+  - {x: 0.030349731, y: 0.10792351}
+  - {x: 0.004688263, y: -0.6252556}
+  - {x: 0.11842537, y: 0.24970913}
+  - {x: -0.122470856, y: 0.15762424}
+  - {x: -0.15247917, y: 0.47306442}
+  - {x: -0.10110664, y: 0.3144846}
+  - {x: 0.28102684, y: 0.5144024}
+  - {x: 0.3680935, y: 0.20235348}
+  - {x: 0.31126595, y: 0.28056717}
+  - {x: 0.14275497, y: 0.16270065}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!114 &5288499309863949653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8868202235810146623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 134e8933cc08e234da781212d9e28c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyOnHit: 0
+  damage: 10

@@ -15,8 +15,9 @@ MonoBehaviour:
   name: Paper Airplane F-16
   healAmt: 0
   healPercent: 0
-  dmgAmt: 90
-  dmgPercent: 0
+  dmgAmt: 0
+  dmgPercent: 50
   uses: 1
   maxUses: 1
+  hasDiscoveredItem: 0
   hasItem: 0

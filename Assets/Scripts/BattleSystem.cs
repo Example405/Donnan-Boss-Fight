@@ -101,7 +101,7 @@ public class BattleSystem : MonoBehaviour
                 timeAdd = 0.0f;
                 turn = 5;
                 if (boss.DamageBoss(pd.damage))
-                    LeaveBattleScene();
+                    EndFight();
                 StartCoroutine(us.ChangeBossBar(boss.health/boss.maxHealth, pd.damage/boss.maxHealth));
             }
         }
@@ -153,8 +153,10 @@ public class BattleSystem : MonoBehaviour
                 if (item.hasItem)
                 {
                     pd.HealPlayer(item.healAmt);
+                    if (boss.DamageBoss(boss.maxHealth * (item.dmgPercent / 100)))
+
                     if (boss.DamageBoss(item.dmgAmt))
-                        LeaveBattleScene();
+                        EndFight();
                     StartCoroutine(us.ChangeBossBar(boss.health/boss.maxHealth, item.dmgAmt/boss.maxHealth));
                     item.uses -= 1;
                     if (item.uses == 0)
@@ -174,7 +176,7 @@ public class BattleSystem : MonoBehaviour
                 us.HideButtonMenu(2);
                 turn = 1;
             } */
-            LeaveBattleScene();
+            SceneManager.LoadScene("WorldWorld");
         }
         else if (turn == 5)
         {
@@ -223,7 +225,7 @@ public class BattleSystem : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Return)) {
                 if (!deathbool)
-                    LeaveBattleScene();
+                    EndFight();
                 else
                     us.ExitGame();
             }
@@ -231,7 +233,10 @@ public class BattleSystem : MonoBehaviour
         }
     }   
 
-    public void LeaveBattleScene () {
-        SceneManager.LoadScene(boss.targetScene);
+    public void EndFight() {
+        turn = 999;
+        pd.defeatedBosses[boss.bossNum] = true;
+        StartCoroutine(us.ChangeScene(boss.targetScene));
+        
     }
 }

@@ -15,9 +15,9 @@ MonoBehaviour:
   name: Power Cable
   healAmt: 0
   healPercent: 0
-  dmgAmt: 75
-  dmgPercent: 0
-  uses: 4
-  maxUses: 4
+  dmgAmt: 0
+  dmgPercent: 10
+  uses: 0
+  maxUses: 2
   hasDiscoveredItem: 1
-  hasItem: 1
+  hasItem: 0

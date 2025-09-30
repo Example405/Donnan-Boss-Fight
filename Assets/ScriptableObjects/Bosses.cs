@@ -16,6 +16,7 @@ public class Bosses : ScriptableObject
     public float health = 100.0f;
     public float maxHealth = 100.0f;
     public string targetScene = "WorldWorld";
+    public int bossNum = 0;
     //Add strings for dialogue
     //Add uhhhhhhhhhhh
 
