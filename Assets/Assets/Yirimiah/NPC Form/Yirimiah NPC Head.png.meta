@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Yirimiah NPC Head_0: -8777360450782734589
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

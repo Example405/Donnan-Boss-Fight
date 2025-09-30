@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Benjamin T. Cat_0: 1338759951457907891
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

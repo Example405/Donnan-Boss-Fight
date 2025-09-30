@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      UtopianPrince Torso and Legs_0: -5878259126629190669
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
