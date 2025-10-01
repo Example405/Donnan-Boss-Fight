@@ -11,6 +11,7 @@ public class Bosses : ScriptableObject
     public GameObject[] attackPrefabs = new GameObject[3];
     public float[] attackTimes = new float[3];
     public float[] attackEndTimes = new float[3];
+    public string[] animNames = new string[3];
     //add animations or sometihng
     GameObject[] enemyParts = new GameObject[1];
     public float health = 100.0f;

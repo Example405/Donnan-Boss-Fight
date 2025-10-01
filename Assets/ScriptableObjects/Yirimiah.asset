@@ -24,7 +24,12 @@ MonoBehaviour:
   attackEndTimes:
   - 6
   - 3
-  - 18
-  health: 75
-  maxHealth: 75
+  - 15
+  animNames:
+  - null
+  - null
+  - null
+  health: 45
+  maxHealth: 60
   targetScene: WorldWorldBack
+  bossNum: 0

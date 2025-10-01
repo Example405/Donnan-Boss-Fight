@@ -21,6 +21,7 @@ public class BattleSystem : MonoBehaviour
     public Player pd;
     public Bosses boss;
     private GameObject currentAttack;
+    private GameObject bossBody;
     private int currentAttackNum;
     private bool deathbool = false;
 
@@ -43,7 +44,7 @@ public class BattleSystem : MonoBehaviour
         }
         pd.health = pd.maxHealth;
         boss.health = boss.maxHealth;
-        Instantiate(boss.body);
+        bossBody = Instantiate(boss.body);
     }
 
     void Update() {
@@ -189,6 +190,10 @@ public class BattleSystem : MonoBehaviour
             //((int) Random.Range(0,4));
             currentAttack = Instantiate(boss.attackPrefabs[currentAttackNum]);
             timeBeforeRestart = boss.attackEndTimes[currentAttackNum];
+            if (boss.animNames[currentAttackNum] != "null") {
+                bossBody.GetComponent<Animator>().SetBool("IsAttacking", true);
+                bossBody.GetComponent<Animator>().SetBool(boss.animNames[currentAttackNum], true);
+            }
         }
         else if (turn == 6)
         {
@@ -214,6 +219,10 @@ public class BattleSystem : MonoBehaviour
                     deathbool = false;
                     us.ChangeDeathButton(false);
                 }
+                if (boss.animNames[currentAttackNum] != "null") {
+                bossBody.GetComponent<Animator>().SetBool("IsAttacking", false);
+                bossBody.GetComponent<Animator>().SetBool(boss.animNames[currentAttackNum], false);
+                }
             }
 
         }
@@ -225,7 +234,7 @@ public class BattleSystem : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Return)) {
                 if (!deathbool)
-                    EndFight();
+                    us.ChangeScene("WorldWorld");
                 else
                     us.ExitGame();
             }

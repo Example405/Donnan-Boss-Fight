@@ -31,6 +31,13 @@ MonoBehaviour:
   - 4
   - 4
   - 4
-  health: 230
+  animNames:
+  - IsLaptop
+  - null
+  - IsReferral
+  - IsReferral
+  - IsReferral
+  health: 0
   maxHealth: 250
-  targetScene: Donnans Office
+  targetScene: WinScene
+  bossNum: 2
