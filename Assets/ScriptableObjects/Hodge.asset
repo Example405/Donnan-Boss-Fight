@@ -12,18 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a335615a398514144ad5d4435d7fe2ab, type: 3}
   m_Name: Hodge
   m_EditorClassIdentifier: 
-  body: {fileID: 0}
+  body: {fileID: 1513352426678543726, guid: f24789b13256dfc43a6ad0a51cb811b4, type: 3}
   attackPrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1513352426678543726, guid: f24789b13256dfc43a6ad0a51cb811b4, type: 3}
+  - {fileID: 2607052527074695216, guid: 8bc8fb2859a1bab49923e8b42c729be5, type: 3}
   - {fileID: 0}
   attackTimes:
   - 0
   - 0
   - 0
   attackEndTimes:
-  - 0
-  - 0
+  - 6
+  - 17
   - 0
   health: 125
   maxHealth: 125
