@@ -24,7 +24,7 @@ MonoBehaviour:
   - 2
   animNames:
   - IsRuler
-  - IsUndyne
+  - null
   health: 35
   maxHealth: 125
   targetScene: Guidance Hallway Back
