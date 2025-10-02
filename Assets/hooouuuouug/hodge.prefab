@@ -243,6 +243,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4145196194522947883}
   - component: {fileID: 5999270557359053209}
+  - component: {fileID: 331874280812819152}
+  - component: {fileID: 6876524409873755402}
   m_Layer: 0
   m_Name: costume1 (1) (1)_0 (1)
   m_TagString: Untagged
@@ -319,6 +321,75 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!68 &331874280812819152
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5256307313920484227}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 2.7850533, y: 0.96779156}
+  - {x: 2.7850506, y: 0.9677918}
+  - {x: 2.5641623, y: 2.3627033}
+  - {x: 1.388768, y: -0.09385359}
+  - {x: -0.48753643, y: -0.46836877}
+  - {x: -1.7886038, y: 0.26958728}
+  - {x: -2.5008278, y: 2.29513}
+  - {x: -2.9301536, y: 0.65248865}
+  - {x: -2.4765646, y: -0.8480788}
+  - {x: -1.5576578, y: -1.808971}
+  - {x: -0.011913903, y: -2.5267944}
+  - {x: 1.7437927, y: -1.8579139}
+  - {x: 2.4924405, y: -0.75072694}
+  - {x: 2.7716954, y: 0.72354907}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!114 &6876524409873755402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5256307313920484227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 134e8933cc08e234da781212d9e28c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyOnHit: 0
+  damage: 10
 --- !u!1 &6567555782705212574
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,6 +572,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3542984180300867258}
   - component: {fileID: 1594087513942580705}
+  - component: {fileID: 5462756367669974242}
+  - component: {fileID: 1088547007712303725}
   m_Layer: 0
   m_Name: costume2 (2) (1)_0
   m_TagString: Untagged
@@ -577,6 +650,56 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &5462756367669974242
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6835896173110368144}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.0000038146973, y: 0}
+  m_Radius: 2.4599998
+--- !u!114 &1088547007712303725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6835896173110368144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 134e8933cc08e234da781212d9e28c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyOnHit: 0
+  damage: 10
 --- !u!1 &7417716125825057127
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,6 +710,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8910377600625667901}
   - component: {fileID: 2112199084856579412}
+  - component: {fileID: 768224869886976377}
+  - component: {fileID: 7517243145574001027}
   m_Layer: 0
   m_Name: costume1 (1) (1)_0
   m_TagString: Untagged
@@ -663,3 +788,73 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!68 &768224869886976377
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7417716125825057127}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 0.09759092, y: -0.39645934}
+  - {x: -1.1111472, y: -0.38305062}
+  - {x: -2.1085598, y: 0.9571687}
+  - {x: -2.5923717, y: 2.107767}
+  - {x: -2.9816458, y: 0.85796356}
+  - {x: -2.582519, y: -0.49320316}
+  - {x: -1.3260818, y: -1.9833937}
+  - {x: 0.022628695, y: -2.5217748}
+  - {x: 1.6809134, y: -1.9572431}
+  - {x: 2.6944964, y: -0.5555099}
+  - {x: 2.8043814, y: 1.3251997}
+  - {x: 2.6250389, y: 2.0537024}
+  - {x: 2.1306877, y: 0.8608886}
+  - {x: 1.0707521, y: -0.36255693}
+  - {x: 0.053840414, y: -0.41130048}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!114 &7517243145574001027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7417716125825057127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 134e8933cc08e234da781212d9e28c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyOnHit: 0
+  damage: 10

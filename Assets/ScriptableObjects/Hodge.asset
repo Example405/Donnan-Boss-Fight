@@ -15,17 +15,17 @@ MonoBehaviour:
   body: {fileID: 1513352426678543726, guid: f24789b13256dfc43a6ad0a51cb811b4, type: 3}
   attackPrefabs:
   - {fileID: 1513352426678543726, guid: f24789b13256dfc43a6ad0a51cb811b4, type: 3}
-  - {fileID: 2607052527074695216, guid: 8bc8fb2859a1bab49923e8b42c729be5, type: 3}
+  - {fileID: 1564157207426333223, guid: 6521b1581ca773c448b43c4ffa6415ff, type: 3}
   attackTimes:
   - 0
   - 0
   attackEndTimes:
   - 6
-  - 2
+  - 15
   animNames:
   - IsRuler
   - null
-  health: 35
+  health: 125
   maxHealth: 125
   targetScene: Guidance Hallway Back
   bossNum: 1

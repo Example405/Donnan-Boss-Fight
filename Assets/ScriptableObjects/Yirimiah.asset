@@ -29,7 +29,7 @@ MonoBehaviour:
   - null
   - null
   - null
-  health: 45
+  health: 60
   maxHealth: 60
   targetScene: WorldWorldBack
   bossNum: 0
