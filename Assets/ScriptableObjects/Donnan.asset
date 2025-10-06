@@ -19,6 +19,13 @@ MonoBehaviour:
   - {fileID: 5157190704428561360, guid: 4f3d926f9ca3add49bb002226815951e, type: 3}
   - {fileID: 3530587207065158452, guid: 743981d43c4fb574d9e42419fd953a40, type: 3}
   - {fileID: 7159534179257458161, guid: 85b5026b10d53e141a268e74e6ab9271, type: 3}
+  music:
+  - {fileID: 3010048100028077318, guid: 7bc0226f9454de143855ed41e14da75c, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 3448780796686878187, guid: 3adfeb0728e555140b0bc4385bc26b70, type: 3}
+  - {fileID: 3448780796686878187, guid: 3adfeb0728e555140b0bc4385bc26b70, type: 3}
+  - {fileID: 3448780796686878187, guid: 3adfeb0728e555140b0bc4385bc26b70, type: 3}
   attackTimes:
   - 1
   - 1

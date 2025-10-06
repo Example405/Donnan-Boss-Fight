@@ -16,6 +16,10 @@ MonoBehaviour:
   attackPrefabs:
   - {fileID: 1513352426678543726, guid: f24789b13256dfc43a6ad0a51cb811b4, type: 3}
   - {fileID: 1564157207426333223, guid: 6521b1581ca773c448b43c4ffa6415ff, type: 3}
+  music:
+  - {fileID: 8530947155412526388, guid: c9a533436cf82274996f21ab89d7686f, type: 3}
+  - {fileID: 3448780796686878187, guid: 3adfeb0728e555140b0bc4385bc26b70, type: 3}
+  - {fileID: 3448780796686878187, guid: 3adfeb0728e555140b0bc4385bc26b70, type: 3}
   attackTimes:
   - 0
   - 0

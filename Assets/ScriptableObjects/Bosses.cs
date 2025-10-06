@@ -9,6 +9,7 @@ public class Bosses : ScriptableObject
     //ebverything bro bro
     public GameObject body;
     public GameObject[] attackPrefabs = new GameObject[3];
+    public GameObject[] music = new GameObject[4];
     public float[] attackTimes = new float[3];
     public float[] attackEndTimes = new float[3];
     public string[] animNames = new string[3];
