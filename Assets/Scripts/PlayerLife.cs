@@ -41,6 +41,7 @@ public class PlayerLife : MonoBehaviour
             canBeHit = false;
             pd.health -= damage;
             StartCoroutine(us.ChangeBar(pd.health/pd.maxHealth, damage/pd.maxHealth));
+            StartCoroutine(playMusic(pd.hitMusic));
             if (pd.health <= 0) {
                 KillPlayer();
             }
@@ -58,4 +59,10 @@ public class PlayerLife : MonoBehaviour
 
         gameObject.SetActive(false);
     }
+
+    public IEnumerator playMusic(GameObject thing) {
+        GameObject thingy = Instantiate(thing);
+        yield return null;
+    }
+
 }

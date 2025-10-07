@@ -12,13 +12,13 @@ public class Player : ScriptableObject
     public Item[] items = new Item[12];
     public Bosses currentBoss;
     public bool[] defeatedBosses = new bool[5];
-
-
+    public GameObject hitMusic;
 
     public void HealPlayer(float heal)
     {
         health += heal;
         if (health > maxHealth)
             health = maxHealth;
+        
     }
 }

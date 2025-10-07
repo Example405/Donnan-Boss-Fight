@@ -2560,6 +2560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackBar: {fileID: 1273782068}
+  attackMusic: {fileID: 3448780796686878187, guid: 3adfeb0728e555140b0bc4385bc26b70, type: 3}
   pd: {fileID: 11400000, guid: c83620affcb1e804fb67658994d3bde4, type: 2}
   boss: {fileID: 11400000, guid: 3296fab91066859418fa678f3a41a590, type: 2}
   testing: 0

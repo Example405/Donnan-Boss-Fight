@@ -18,8 +18,8 @@ MonoBehaviour:
   - {fileID: 1564157207426333223, guid: 6521b1581ca773c448b43c4ffa6415ff, type: 3}
   music:
   - {fileID: 8530947155412526388, guid: c9a533436cf82274996f21ab89d7686f, type: 3}
-  - {fileID: 3448780796686878187, guid: 3adfeb0728e555140b0bc4385bc26b70, type: 3}
-  - {fileID: 3448780796686878187, guid: 3adfeb0728e555140b0bc4385bc26b70, type: 3}
+  - {fileID: 663386659047616312, guid: 154254672b04797408d5635021c8d650, type: 3}
+  - {fileID: 663386659047616312, guid: 154254672b04797408d5635021c8d650, type: 3}
   attackTimes:
   - 0
   - 0
@@ -29,7 +29,7 @@ MonoBehaviour:
   animNames:
   - IsRuler
   - null
-  health: 125
+  health: 110
   maxHealth: 125
   targetScene: Guidance Hallway Back
   bossNum: 1

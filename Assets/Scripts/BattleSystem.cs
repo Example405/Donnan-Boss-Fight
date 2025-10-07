@@ -18,10 +18,13 @@ public class BattleSystem : MonoBehaviour
     float attackbarStartingPoint = -875.0f;
     float attackbarEndingPoint = 875.0f;
     public GameObject attackBar;
+    public GameObject attackMusic;
     public Player pd;
     public Bosses boss;
     private GameObject currentAttack;
     private GameObject bossBody;
+    private GameObject bossMusic;
+    private GameObject bossMusicTemp;
     private int currentAttackNum;
     private bool deathbool = false;
 
@@ -45,6 +48,7 @@ public class BattleSystem : MonoBehaviour
         pd.health = pd.maxHealth;
         boss.health = boss.maxHealth;
         bossBody = Instantiate(boss.body);
+        bossMusic = Instantiate(boss.music[0]);
     }
 
     void Update() {
@@ -104,6 +108,7 @@ public class BattleSystem : MonoBehaviour
                 if (boss.DamageBoss(pd.damage))
                     EndFight();
                 StartCoroutine(us.ChangeBossBar(boss.health/boss.maxHealth, pd.damage/boss.maxHealth));
+                StartCoroutine(playMusic(attackMusic));
             }
         }
         else if (turn == 3)
@@ -194,6 +199,9 @@ public class BattleSystem : MonoBehaviour
                 bossBody.GetComponent<Animator>().SetBool("IsAttacking", true);
                 bossBody.GetComponent<Animator>().SetBool(boss.animNames[currentAttackNum], true);
             }
+            if (boss.music[currentAttackNum] != null && currentAttackNum != 0) {
+                StartCoroutine(playBossMusicProj(currentAttackNum));
+            }
         }
         else if (turn == 6)
         {
@@ -247,5 +255,39 @@ public class BattleSystem : MonoBehaviour
         pd.defeatedBosses[boss.bossNum] = true;
         StartCoroutine(us.ChangeScene(boss.targetScene));
         
+    }
+
+    public IEnumerator playBossMusicProj(int nmbr) {
+        bossMusicTemp = Instantiate(boss.music[nmbr]);
+        float time = 0.0f;
+        while (true) {
+            time += Time.deltaTime;
+            if (time <= boss.attackEndTimes[nmbr])
+                yield return null;
+            else {
+                Destroy(bossMusicTemp);
+                break;
+            }
+        }
+    }
+
+    public IEnumerator playMusic(GameObject thingy) {
+        GameObject thingyy = Instantiate(thingy);
+        return null;
+    }
+
+    public IEnumerator playMusic(GameObject thingy, float timer) {
+        GameObject thingyy = Instantiate(thingy);
+        float time = 0.0f;
+        for (int i = 0; i < 10000; i++) {
+            if (time < timer) {
+                time += Time.deltaTime;
+                yield return null;
+            }
+            else {
+                Destroy(thingyy);
+                break;
+            }
+        }
     }
 }

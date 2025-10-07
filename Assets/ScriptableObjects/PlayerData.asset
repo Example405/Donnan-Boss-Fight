@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 272108fc7b5b68246abad854576af3bc, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  health: -5
+  health: 95
   maxHealth: 100
   damage: 15
   regeneration: 2
@@ -31,3 +31,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0c0cccbcade0e5848a607fe2fb59abfc, type: 2}
   currentBoss: {fileID: 11400000, guid: b037c1b0ad1b8f64e8c9d6f70cfdf327, type: 2}
   defeatedBosses: 0100000000
+  hitMusic: {fileID: 7027489667190897374, guid: 79f86596edca38d45a3f2af5c52bffaa, type: 3}

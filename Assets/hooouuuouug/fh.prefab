@@ -40,9 +40,81 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3399588609003659941}
     m_Modifications:
+    - target: {fileID: 482329493697031214, guid: 8bc8fb2859a1bab49923e8b42c729be5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1301750246573751735, guid: 8bc8fb2859a1bab49923e8b42c729be5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1606569084094350377, guid: 8bc8fb2859a1bab49923e8b42c729be5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1732817269983460855, guid: 8bc8fb2859a1bab49923e8b42c729be5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1879663052778093696, guid: 8bc8fb2859a1bab49923e8b42c729be5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2607052527074695216, guid: 8bc8fb2859a1bab49923e8b42c729be5, type: 3}
       propertyPath: m_Name
       value: Pencil attack
+      objectReference: {fileID: 0}
+    - target: {fileID: 3637111710258740649, guid: 8bc8fb2859a1bab49923e8b42c729be5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3742911343836071058, guid: 8bc8fb2859a1bab49923e8b42c729be5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3829055998886244466, guid: 8bc8fb2859a1bab49923e8b42c729be5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4031791748004430073, guid: 8bc8fb2859a1bab49923e8b42c729be5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4680744016968951488, guid: 8bc8fb2859a1bab49923e8b42c729be5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4900512657581742782, guid: 8bc8fb2859a1bab49923e8b42c729be5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5253551080913332483, guid: 8bc8fb2859a1bab49923e8b42c729be5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5663245851687360406, guid: 8bc8fb2859a1bab49923e8b42c729be5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6047593579805362333, guid: 8bc8fb2859a1bab49923e8b42c729be5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6429587259966196889, guid: 8bc8fb2859a1bab49923e8b42c729be5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6907914338296551662, guid: 8bc8fb2859a1bab49923e8b42c729be5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6976309901243701560, guid: 8bc8fb2859a1bab49923e8b42c729be5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7699531446690039440, guid: 8bc8fb2859a1bab49923e8b42c729be5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7924837784209249479, guid: 8bc8fb2859a1bab49923e8b42c729be5, type: 3}
       propertyPath: m_LocalPosition.x
