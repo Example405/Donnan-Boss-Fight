@@ -108,7 +108,7 @@ public class BattleSystem : MonoBehaviour
                 if (boss.DamageBoss(pd.damage))
                     EndFight();
                 StartCoroutine(us.ChangeBossBar(boss.health/boss.maxHealth, pd.damage/boss.maxHealth));
-                StartCoroutine(playMusic(attackMusic));
+                playMusic(attackMusic);
             }
         }
         else if (turn == 3)
@@ -193,7 +193,10 @@ public class BattleSystem : MonoBehaviour
             us.healthSlider.value = pd.health / pd.maxHealth;
             currentAttackNum = ((int) Random.Range(0,boss.attackPrefabs.Length));
             //((int) Random.Range(0,4));
-            currentAttack = Instantiate(boss.attackPrefabs[currentAttackNum]);
+            if (boss.attackPrefabs[currentAttackNum] != null)
+                currentAttack = Instantiate(boss.attackPrefabs[currentAttackNum]);
+            else
+                currentAttack = null;
             timeBeforeRestart = boss.attackEndTimes[currentAttackNum];
             if (boss.animNames[currentAttackNum] != "null") {
                 bossBody.GetComponent<Animator>().SetBool("IsAttacking", true);
@@ -208,7 +211,8 @@ public class BattleSystem : MonoBehaviour
             timeAdd += Time.deltaTime;
 
             if (timeAdd >= boss.attackTimes[currentAttackNum] && hasAttacked == false) {
-                currentAttack.SetActive(true);
+                if (currentAttack != null)
+                    currentAttack.SetActive(true);
                 hasAttacked = true;
             }
 
@@ -271,9 +275,8 @@ public class BattleSystem : MonoBehaviour
         }
     }
 
-    public IEnumerator playMusic(GameObject thingy) {
+    public void playMusic(GameObject thingy) {
         GameObject thingyy = Instantiate(thingy);
-        return null;
     }
 
     public IEnumerator playMusic(GameObject thingy, float timer) {

@@ -24,6 +24,9 @@ public class PlayerLife : MonoBehaviour
     public bool canBeHit = true;
     private float timeSinceHit = 0.0f;
     public UIScript us;
+    public Sprite damagePng;
+    public Sprite regularPng;
+    public Transform camera;
 
 
     public void Update() {
@@ -62,7 +65,33 @@ public class PlayerLife : MonoBehaviour
 
     public IEnumerator playMusic(GameObject thing) {
         GameObject thingy = Instantiate(thing);
-        yield return null;
+        float time = 0.0f;
+        while (true) {
+            time += Time.deltaTime;
+            if (time - Mathf.Round(time) <= 0.33f) 
+                GetComponent<SpriteRenderer>().sprite = damagePng;
+            else
+                GetComponent<SpriteRenderer>().sprite = regularPng;
+
+            if (time <= 0.25f) {
+                camera.position = new Vector3 (Mathf.Lerp(0.0f, 0.1f, time*4), camera.position.y, camera.position.z);
+            }
+            else if (time <= 0.5f) {
+                camera.position = new Vector3 (Mathf.Lerp(0.1f, -0.1f, (time - 0.25f)*4), camera.position.y, camera.position.z);
+            }
+            else
+                camera.position = new Vector3 (Mathf.Lerp(-0.1f, 0.0f, (time - 0.5f)*4), camera.position.y, camera.position.z);
+
+
+            if (time >= damageCooldown) {
+                GetComponent<SpriteRenderer>().sprite = regularPng;
+                camera.position = new Vector3(0.0f, camera.position.y, camera.position.z);
+                break;
+            }
+            yield return null;
+        }
+
+        
     }
 
 }

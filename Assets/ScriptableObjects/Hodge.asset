@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 1513352426678543726, guid: f24789b13256dfc43a6ad0a51cb811b4, type: 3}
   attackPrefabs:
-  - {fileID: 1513352426678543726, guid: f24789b13256dfc43a6ad0a51cb811b4, type: 3}
+  - {fileID: 0}
   - {fileID: 1564157207426333223, guid: 6521b1581ca773c448b43c4ffa6415ff, type: 3}
   music:
   - {fileID: 8530947155412526388, guid: c9a533436cf82274996f21ab89d7686f, type: 3}
@@ -29,7 +29,7 @@ MonoBehaviour:
   animNames:
   - IsRuler
   - null
-  health: 110
+  health: 35
   maxHealth: 125
   targetScene: Guidance Hallway Back
   bossNum: 1
