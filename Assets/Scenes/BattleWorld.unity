@@ -1005,6 +1005,7 @@ MonoBehaviour:
   us: {fileID: 1237189896}
   damagePng: {fileID: 21300000, guid: 17d09121c17b22949b055c1ed4a3a63c, type: 3}
   regularPng: {fileID: 21300000, guid: 477a7f770456b074eb07f7f6cc533074, type: 3}
+  notRegPng: {fileID: 21300000, guid: 035f438973f88d3419396e2636786de9, type: 3}
   camera: {fileID: 1238275922}
 --- !u!114 &497618505
 MonoBehaviour:

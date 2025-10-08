@@ -100,12 +100,24 @@ public class BattleSystem : MonoBehaviour
                 turn = 5;
             }
             if (Input.GetKeyDown(KeyCode.Space))
-            {
+            {      
+                float dam = pd.damage;
+                if (timeAdd < (barTime/5) || timeAdd > ((barTime/5) * 4)) {
+                    dam = pd.damage/2;
+                }
+                else if (timeAdd < ((barTime/5 * 2)) || timeAdd > ((barTime/5) * 3)) {
+                    dam = pd.damage;
+                }
+                else
+                    dam = pd.damage * 2;
+
+                Debug.Log("Damage Done" + dam);
+
                 //attack
                 us.HideAttackBar();
                 timeAdd = 0.0f;
                 turn = 5;
-                if (boss.DamageBoss(pd.damage))
+                if (boss.DamageBoss(dam))
                     EndFight();
                 StartCoroutine(us.ChangeBossBar(boss.health/boss.maxHealth, pd.damage/boss.maxHealth));
                 playMusic(attackMusic);
@@ -205,6 +217,8 @@ public class BattleSystem : MonoBehaviour
             if (boss.music[currentAttackNum] != null && currentAttackNum != 0) {
                 StartCoroutine(playBossMusicProj(currentAttackNum));
             }
+
+            GameObject.Find("BattlePlayer").GetComponent<SpriteRenderer>().sprite = GameObject.Find("BattlePlayer").GetComponent<PlayerLife>().regularPng;
         }
         else if (turn == 6)
         {

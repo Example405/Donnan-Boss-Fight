@@ -26,8 +26,8 @@ public class PlayerLife : MonoBehaviour
     public UIScript us;
     public Sprite damagePng;
     public Sprite regularPng;
+    public Sprite notRegPng;
     public Transform camera;
-
 
     public void Update() {
         if (!canBeHit) {
@@ -71,16 +71,16 @@ public class PlayerLife : MonoBehaviour
             if (time - Mathf.Round(time) <= 0.33f) 
                 GetComponent<SpriteRenderer>().sprite = damagePng;
             else
-                GetComponent<SpriteRenderer>().sprite = regularPng;
+                GetComponent<SpriteRenderer>().sprite = notRegPng;
 
-            if (time <= 0.25f) {
-                camera.position = new Vector3 (Mathf.Lerp(0.0f, 0.1f, time*4), camera.position.y, camera.position.z);
+            if (time <= 0.15f) {
+                camera.position = new Vector3 (Mathf.Lerp(0.0f, 0.1f, time*6.4f), camera.position.y, camera.position.z);
             }
-            else if (time <= 0.5f) {
-                camera.position = new Vector3 (Mathf.Lerp(0.1f, -0.1f, (time - 0.25f)*4), camera.position.y, camera.position.z);
+            else if (time <= 0.3f) {
+                camera.position = new Vector3 (Mathf.Lerp(0.1f, -0.1f, (time - 0.15f)*6.4f), camera.position.y, camera.position.z);
             }
             else
-                camera.position = new Vector3 (Mathf.Lerp(-0.1f, 0.0f, (time - 0.5f)*4), camera.position.y, camera.position.z);
+                camera.position = new Vector3 (Mathf.Lerp(-0.1f, 0.0f, (time - 0.3f)*6.4f), camera.position.y, camera.position.z);
 
 
             if (time >= damageCooldown) {

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 272108fc7b5b68246abad854576af3bc, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  health: 95
+  health: 65
   maxHealth: 100
-  damage: 15
+  damage: 10
   regeneration: 2
   items:
   - {fileID: 11400000, guid: 52b0e166d428d5c438fae155d0833c10, type: 2}
