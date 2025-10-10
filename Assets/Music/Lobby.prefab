@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7184780010845114164}
   - component: {fileID: 4222084639878881835}
+  - component: {fileID: -3835986385656147140}
   m_Layer: 0
   m_Name: Lobby
   m_TagString: Untagged
@@ -129,3 +130,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-3835986385656147140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403638462904589816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f7530c6e2de66b478d3665b1b7bf3b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

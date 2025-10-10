@@ -35,7 +35,8 @@ public class BattleSystem : MonoBehaviour
 
 
     public void Start()
-    {   
+    {      
+        Destroy(GameObject.Find("Lobby(Clone)"));
         boss = pd.currentBoss;
         us.ExitBattleUI();
         us.SelectButton(buttonOn - 1, buttonOn - 1);

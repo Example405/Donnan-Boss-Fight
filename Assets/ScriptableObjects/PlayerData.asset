@@ -32,3 +32,4 @@ MonoBehaviour:
   currentBoss: {fileID: 11400000, guid: b037c1b0ad1b8f64e8c9d6f70cfdf327, type: 2}
   defeatedBosses: 0100000000
   hitMusic: {fileID: 7027489667190897374, guid: 79f86596edca38d45a3f2af5c52bffaa, type: 3}
+  music: {fileID: 403638462904589816, guid: bd44442af09e9614da771f29a983b26d, type: 3}

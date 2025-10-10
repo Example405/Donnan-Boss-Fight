@@ -13,6 +13,7 @@ public class Player : ScriptableObject
     public Bosses currentBoss;
     public bool[] defeatedBosses = new bool[5];
     public GameObject hitMusic;
+    public GameObject music;
 
     public void HealPlayer(float heal)
     {

@@ -23,11 +23,15 @@ public class UIScript : MonoBehaviour
     public Slider healthSlider;
     public Slider bossHealthSlider;
     public bool isInWorld = true;
+    public bool isLobby = true;
+    public Player pd;
 
     public void Start() {
         if (isInWorld) {
             StartCoroutine(RidFade());
         }
+        if (GameObject.Find("Lobby(Clone)") == null && GameObject.Find("BattleSystem") == null)
+            Instantiate(pd.music);
 
     }
 
