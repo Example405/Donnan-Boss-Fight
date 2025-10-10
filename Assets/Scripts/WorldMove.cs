@@ -48,6 +48,9 @@ public class WorldMove : MonoBehaviour
                 alreadyLooking = true;
             }
         }
+        if (Input.GetKey(KeyCode.Z)) {
+            GameObject.Find("text").GetComponent<TextMove>().ChangeText();
+        }
         if (Input.GetKey(KeyCode.J))
             EnterBattleScene();
 
@@ -62,6 +65,7 @@ public class WorldMove : MonoBehaviour
                 }
 
         }
+
         horizontal = 0.0f;
         vertical = 0.0f;
         alreadyLooking = false;

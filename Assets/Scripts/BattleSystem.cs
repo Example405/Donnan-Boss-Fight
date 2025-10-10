@@ -260,8 +260,9 @@ public class BattleSystem : MonoBehaviour
             }
 
             if (Input.GetKeyDown(KeyCode.Return)) {
-                if (!deathbool)
-                    us.ChangeScene("WorldWorld");
+                if (!deathbool) {
+                    StartCoroutine(us.ChangeScene("WorldWorld"));
+                }
                 else
                     us.ExitGame();
             }

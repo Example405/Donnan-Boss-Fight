@@ -2536,6 +2536,8 @@ MonoBehaviour:
   healthSlider: {fileID: 1956565618}
   bossHealthSlider: {fileID: 1831893161}
   isInWorld: 1
+  isLobby: 1
+  pd: {fileID: 0}
 --- !u!4 &1237189897
 Transform:
   m_ObjectHideFlags: 0
